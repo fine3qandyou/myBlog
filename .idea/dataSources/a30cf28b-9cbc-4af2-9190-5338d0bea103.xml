@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="blog@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="blog">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="booksystem"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sys"/>
+    <table id="8" parent="2" name="t_blog"/>
+    <table id="9" parent="2" name="t_blogger"/>
+    <table id="10" parent="2" name="t_blogtype"/>
+    <column id="11" parent="8" name="id">
+      <Position>1</Position>
+      <Comment>博客类型</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="12" parent="8" name="title">
+      <Position>2</Position>
+      <Comment>博客题目</Comment>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="8" name="summary">
+      <Position>3</Position>
+      <Comment>博客摘要</Comment>
+      <DataType>varchar(400)|0</DataType>
+    </column>
+    <column id="14" parent="8" name="releaseDate">
+      <Position>4</Position>
+      <Comment>发布日期</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="15" parent="8" name="clickHit">
+      <Position>5</Position>
+      <Comment>评论次数</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="16" parent="8" name="replyHit">
+      <Position>6</Position>
+      <Comment>回复次数</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="17" parent="8" name="content">
+      <Position>7</Position>
+      <Comment>博客内容</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="18" parent="8" name="keyWord">
+      <Position>8</Position>
+      <Comment>关键字</Comment>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="19" parent="8" name="type_id">
+      <Position>9</Position>
+      <Comment>外键关联博客类别</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="20" parent="8" name="type_id">
+      <ColNames>type_id</ColNames>
+    </index>
+    <key id="21" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="22" parent="8" name="t_blog_ibfk_1">
+      <ColNames>type_id</ColNames>
+      <RefSchemaName>blog</RefSchemaName>
+      <RefTableName>t_blogtype</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="23" parent="9" name="id">
+      <Position>1</Position>
+      <Comment>博主id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="9" name="username">
+      <Position>2</Position>
+      <Comment>博主姓名</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="9" name="password">
+      <Position>3</Position>
+      <Comment>博主密码</Comment>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="9" name="profile">
+      <Position>4</Position>
+      <Comment>博主信息</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="27" parent="9" name="nickname">
+      <Position>5</Position>
+      <Comment>博主昵称</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="28" parent="9" name="sign">
+      <Position>6</Position>
+      <Comment>博主签名</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="29" parent="9" name="imagename">
+      <Position>7</Position>
+      <Comment>博主头像路径</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="30" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="10" name="id">
+      <Position>1</Position>
+      <Comment>博客id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="10" name="typeName">
+      <Position>2</Position>
+      <Comment>博客类别</Comment>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="33" parent="10" name="orderNum">
+      <Position>3</Position>
+      <Comment>博客排序</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="34" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
