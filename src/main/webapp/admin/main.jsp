@@ -32,10 +32,14 @@
 <div class="easyui-layout" style="width:100%;height:100%;">
     <div region="north" style="height: 78px; background-color: #E0ECFF">
         <table style="padding: 5px" width="100%">
-                <tr width="100%" align="center">
-                    <h1>博客后台系统</h1>
-                    <p font-size="3" align="right">&nbsp;&nbsp;<strong>欢迎：</strong>admin</p>
-                </tr>
+            <tr>
+                <td width="50%">
+                    <h2>博客后台系统</h2>
+                </td>
+                <td valign="bottom" align="right" width="50%">
+                    <p font-size="3" color="#1e90ff">&nbsp;&nbsp;<strong>欢迎：</strong>admin</p>
+                </td>
+            </tr>
         </table>
     </div>
     <div region="west" style="width: 200px" title="导航菜单" split="true">
