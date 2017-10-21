@@ -18,7 +18,7 @@
         id,username,password,profile,nickname,sign,imagename
     </sql>
 
-    <select id="getBloggerData" resultMap="BloggerResult">
+    <select id="getBloggerData" resultMap="BloggerResult" >
         select <include refid="BloggerColumns"/>  from t_blogger where id = 1
     </select>
 
