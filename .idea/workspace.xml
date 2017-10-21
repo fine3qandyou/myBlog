@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="完成Blogger">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/BloggerAdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/service/BloggerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/service/Impl/BloggerServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/util/pathUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/admin/modifyInfo.jsp" />
+    <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/myblog/dao/BloggerDao.class" afterPath="$PROJECT_DIR$/target/classes/com/myblog/dao/BloggerDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/BloggerMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BloggerMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -824,7 +821,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.pathUtil">
+  <component name="RunManager" selected="Tomcat Server.admin">
     <configuration default="false" name="BlogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1554,7 +1551,7 @@
       <workItem from="1507017267218" duration="18874000" />
       <workItem from="1507514359673" duration="12623000" />
       <workItem from="1507551848032" duration="41247000" />
-      <workItem from="1507773240451" duration="122845000" />
+      <workItem from="1507773240451" duration="122942000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Blogger对应的dao和mapper文件">
       <created>1508501898407</created>
@@ -1570,7 +1567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508501953474</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成Blogger的Service层，下一步完成Controller部分">
+      <created>1508568528311</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508568528311</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1606,7 +1610,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195589000" />
+    <option name="totallyTimeSpent" value="195686000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1644,7 +1648,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.4958632" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19680265" sideWeight="0.49154335" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19680265" sideWeight="0.49154335" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19877505" sideWeight="0.50845665" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1726,7 +1730,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加了Blogger对应的dao和mapper文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了Blogger对应的dao和mapper文件" />
+    <MESSAGE value="完成Blogger的Service层，下一步完成Controller部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成Blogger的Service层，下一步完成Controller部分" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
