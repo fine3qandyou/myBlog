@@ -59,7 +59,7 @@
         SELECT COUNT(id) FROM blog.t_blogtype
     </select>
 
-    <select id="getBlogTypeData" parameterType="Integer" resultMap="BlogTypeResult">
+    <select id="getBlogTypeData" resultMap="BlogTypeResult">
         SELECT
         t2.*,
         COUNT(t1.id) AS blogCount

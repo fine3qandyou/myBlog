@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/util/pathUtil.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/dao/BloggerDao.class" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/dao/BloggerDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogTypeMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogTypeMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/BloggerMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BloggerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/BloggerMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BloggerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/mapper/BloggerMapper.xml" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/mapper/BloggerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/BlogTypeMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogTypeMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/mapper/BlogTypeMapper.xml" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/mapper/BlogTypeMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -99,14 +95,14 @@
       <file leaf-file-name="BloggerMapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BloggerMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+            <state relative-caret-position="384">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
-                <marker date="1508569844374" expanded="true" signature="818:887" ph="select from t_blogger" />
-                <marker date="1508569844374" expanded="true" signature="995:1002" ph="SELECT nickn... " />
-                <marker date="1508569844374" expanded="true" signature="995:1090" ph="SELECT FROM t_blogger" />
-                <marker date="1508569844374" expanded="true" signature="1170:1191" ph="UPDATE blog.... " />
-                <marker date="1508569844374" expanded="true" signature="1170:1783" ph="UPDATE blog.... " />
+                <marker date="1508573906279" expanded="true" signature="819:888" ph="select from t_blogger" />
+                <marker date="1508573906279" expanded="true" signature="996:1003" ph="SELECT nickn... " />
+                <marker date="1508573906279" expanded="true" signature="996:1091" ph="SELECT FROM t_blogger" />
+                <marker date="1508573906279" expanded="true" signature="1171:1192" ph="UPDATE blog.... " />
+                <marker date="1508573906279" expanded="true" signature="1171:1784" ph="UPDATE blog.... " />
               </folding>
             </state>
           </provider>
@@ -1487,7 +1483,7 @@
       <workItem from="1507017267218" duration="18874000" />
       <workItem from="1507514359673" duration="12623000" />
       <workItem from="1507551848032" duration="41247000" />
-      <workItem from="1507773240451" duration="125536000" />
+      <workItem from="1507773240451" duration="126090000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Blogger对应的dao和mapper文件">
       <created>1508501898407</created>
@@ -1524,7 +1520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508568607988</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修复bloggermapper">
+      <created>1508573370769</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1508573370769</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1560,7 +1563,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198280000" />
+    <option name="totallyTimeSpent" value="198834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1577,7 +1580,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5019305" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.4980695" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.4980695" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17815775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1591,13 +1594,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271028" sideWeight="0.4980695" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8182762" sideWeight="0.4980695" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.4958632" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.4958632" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19680265" sideWeight="0.49154335" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19877505" sideWeight="0.50845665" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1681,7 +1684,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加了Blogger对应的dao和mapper文件" />
     <MESSAGE value="完成Blogger的Service层，下一步完成Controller部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成Blogger的Service层，下一步完成Controller部分" />
+    <MESSAGE value="修复bloggermapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复bloggermapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2156,14 +2160,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BloggerMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        <state relative-caret-position="384">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
-            <marker date="1508569844374" expanded="true" signature="818:887" ph="select from t_blogger" />
-            <marker date="1508569844374" expanded="true" signature="995:1002" ph="SELECT nickn... " />
-            <marker date="1508569844374" expanded="true" signature="995:1090" ph="SELECT FROM t_blogger" />
-            <marker date="1508569844374" expanded="true" signature="1170:1191" ph="UPDATE blog.... " />
-            <marker date="1508569844374" expanded="true" signature="1170:1783" ph="UPDATE blog.... " />
+            <marker date="1508573906279" expanded="true" signature="819:888" ph="select from t_blogger" />
+            <marker date="1508573906279" expanded="true" signature="996:1003" ph="SELECT nickn... " />
+            <marker date="1508573906279" expanded="true" signature="996:1091" ph="SELECT FROM t_blogger" />
+            <marker date="1508573906279" expanded="true" signature="1171:1192" ph="UPDATE blog.... " />
+            <marker date="1508573906279" expanded="true" signature="1171:1784" ph="UPDATE blog.... " />
           </folding>
         </state>
       </provider>
