@@ -1,7 +1,9 @@
 package com.myblog.entity;
 
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class PageBean<T> {
 
@@ -11,6 +13,7 @@ public class PageBean<T> {
     private int start;
     private int end;
     private List<T> result; //分页查询的结果
+    private Map<String,Object> map = new HashMap<String,Object>();   //查询条件
 
     public int getCurrPage() {
         return currPage;
@@ -58,6 +61,14 @@ public class PageBean<T> {
 
     public void setResult(List<T> result) {
         this.result = result;
+    }
+
+    public Map<String, Object> getMap() {
+        return map;
+    }
+
+    public void putMap(Map<String, Object> map) {
+        this.map = map;
     }
 
     public PageBean() {

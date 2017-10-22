@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myblog.dao.CommentDao">
+
+    <resultMap id="commentResult" type="Comment">
+        <id property="id" column="id"/>
+        <result property="userIp" column="userIp"/>
+        <result property="content" column="content"/>
+        <result property="date" column="date"/>
+        <result property="verifyState" column="verifyState"/>
+        <association property="blog" column="blog_id" select="com.myblog.dao.BlogDao.getById"/>
+    </resultMap>
+
+    <select id="listByPage" resultMap="commentResult" parameterType="Map">
+        SELECT * FROM blog.t_comment
+        <where>
+            <if test="blog_id!=null and blog_id != ''">
+                AND blog_id=#{blog_id}
+            </if>
+            <if test="verifyState!= null and verifyState != ''">
+                AND verifyState=#{verifyState}
+            </if>
+        </where>
+        ORDER BY date DESC
+        <if test="start!=null and end!=null">
+            LIMIT #{start},#{end}
+        </if>
+    </select>
+
+    <select id="getTotal" parameterType="Map">
+        SELECT COUNT(id) FROM blog.t_comment
+        <where>
+            <if test="verifyState != null">
+                verifyState = #{verifyState}
+            </if>
+        </where>
+    </select>
+
+    <select id="getById" resultMap="commentResult">
+        SELECT * FROM blog.t_comment WHERE id=#{id}
+    </select>
+
+    <insert id="saveComment">
+        INSERT INTO blog.t_comment VALUES (null,#{userIp},#{content},now(),0,#{blog_id})
+    </insert>
+
+    <delete id="deleteComment">
+        DELETE FROM blog.t_comment WHERE id=#{id}
+    </delete>
+
+    <update id="updateComment" parameterType="Comment">
+        UPDATE blog.t_comment
+        <set>
+            <if test="verifyState != null">
+                varifyState=#{verifyState}
+            </if>
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <select id="queryByBlogId">
+        SELECT * FROM blog.t_comment WHERE blog_id=#{blog_id}
+    </select>
+
+    <delete id="deleteCommentByBlogId">
+        DELETE FROM blog.t_comment WHERE blog_id=#{blog_id}
+    </delete>
+
+
+</mapper>
