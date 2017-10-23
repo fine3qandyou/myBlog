@@ -51,7 +51,7 @@
                 return $(this).form("validate");
             }, //进行验证，通过才让提交
             success: function(result) {
-                var json=eval("("+result+")");
+                var json=JSON.parse(result);
                 if(json.success==true) {
                     $.messager.alert("系统提示", "博客类别保存成功");
                     $("typeName").val(""); //保存成功后将内容置空

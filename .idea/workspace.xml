@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="完成评论功能后台部分，修改了博客信息显示条数">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
+    <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/admin/CommentManage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/myblog/entity/PageBean.class" afterPath="$PROJECT_DIR$/target/classes/com/myblog/entity/PageBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/entity/PageBean.class" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/entity/PageBean.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/CommentAdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/CommentAdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/service/Impl/CommentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/service/Impl/CommentServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/BlogManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/BlogManage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/mapper/BloggerMapper.xml" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/mapper/BloggerMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/admin/BlogManage.jsp" afterPath="$PROJECT_DIR$/target/myBlog/admin/BlogManage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/admin/BlogTypeManage.jsp" afterPath="$PROJECT_DIR$/target/myBlog/admin/BlogTypeManage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/index.jsp" afterPath="$PROJECT_DIR$/target/myBlog/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -111,60 +114,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CommentServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/service/Impl/CommentServiceImpl.java">
+      <file leaf-file-name="CommentManage.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/CommentManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="522">
+              <caret line="82" column="12" lean-forward="true" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
               <folding>
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1116#1117#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-                <element signature="e#1332#1333#0" expanded="true" />
-                <element signature="e#1443#1444#0" expanded="true" />
-                <element signature="e#1494#1495#0" expanded="true" />
-                <element signature="e#1615#1616#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1799#1800#0" expanded="true" />
-                <element signature="e#1862#1863#0" expanded="true" />
-                <element signature="e#1993#1994#0" expanded="true" />
-                <element signature="e#2042#2043#0" expanded="true" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentAdminController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommentAdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/CommentAdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="39" column="70" lean-forward="false" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
-              <folding>
-                <element signature="e#1210#1219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogAdminController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/BlogAdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-              <folding>
-                <element signature="e#1135#1141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogManage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/BlogManage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="100" column="82" lean-forward="false" selection-start-line="100" selection-start-column="82" selection-end-line="100" selection-end-column="82" />
+            <state relative-caret-position="1008">
+              <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -180,10 +146,10 @@
         <option value="spring-beans.schema" />
         <option value="jsf" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -203,6 +169,7 @@
       <find>limit</find>
       <find>listBlog</find>
       <find>tb</find>
+      <find>dg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/myblog/entity/Blogger.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-beans.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/util/ResponseUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/dao/BlogDao.java" />
@@ -267,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/admin/BlogManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/CommentAdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/service/Impl/CommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/CommentManage.jsp" />
       </list>
     </option>
   </component>
@@ -1602,7 +1569,7 @@
       <workItem from="1507017267218" duration="18874000" />
       <workItem from="1507514359673" duration="12623000" />
       <workItem from="1507551848032" duration="41247000" />
-      <workItem from="1507773240451" duration="150106000" />
+      <workItem from="1507773240451" duration="153493000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Blogger对应的dao和mapper文件">
       <created>1508501898407</created>
@@ -1681,7 +1648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508684325675</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完成评论功能后台部分，修改了博客信息显示条数">
+      <created>1508725245033</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1508725245033</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1717,7 +1691,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222850000" />
+    <option name="totallyTimeSpent" value="226237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1844,7 +1818,8 @@
     <MESSAGE value="改掉了eval函数，加入bootstrap包" />
     <MESSAGE value="更新了评论功能的MV层" />
     <MESSAGE value="准备完成C层" />
-    <option name="LAST_COMMIT_MESSAGE" value="准备完成C层" />
+    <MESSAGE value="完成评论功能后台部分，修改了博客信息显示条数" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成评论功能后台部分，修改了博客信息显示条数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1857,14 +1832,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/testUeditor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/dialogs/searchreplace/searchreplace.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-936">
@@ -2084,14 +2051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/BlogTypeManage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="69" column="43" lean-forward="true" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -2352,30 +2311,46 @@
         <state relative-caret-position="96">
           <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1799#1800#0" expanded="true" />
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1993#1994#0" expanded="true" />
-            <element signature="e#2042#2043#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="false" />
+            <element signature="e#1009#1010#0" expanded="false" />
+            <element signature="e#1116#1117#0" expanded="false" />
+            <element signature="e#1161#1162#0" expanded="false" />
+            <element signature="e#1278#1279#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1443#1444#0" expanded="false" />
+            <element signature="e#1494#1495#0" expanded="false" />
+            <element signature="e#1615#1616#0" expanded="false" />
+            <element signature="e#1671#1672#0" expanded="false" />
+            <element signature="e#1799#1800#0" expanded="false" />
+            <element signature="e#1862#1863#0" expanded="false" />
+            <element signature="e#1993#1994#0" expanded="false" />
+            <element signature="e#2042#2043#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/BlogTypeManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/CommentAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="39" column="70" lean-forward="false" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+        <state relative-caret-position="1008">
+          <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/CommentManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="82" column="12" lean-forward="true" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
           <folding>
-            <element signature="e#1210#1219#0" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
