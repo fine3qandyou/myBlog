@@ -34,7 +34,7 @@ public class BloggerAdminController {
     public void getBloggerByName(@RequestParam(value = "imageFile" , required = false)MultipartFile imageFile,
                                  HttpServletResponse response , Blogger blogger) throws Exception{
         if(!imageFile.isEmpty()){
-            String path="J:/resourcecode/myBlog/src/main/webapp/static/userImages";
+            String path="J:/resourcecode/myBlog/src/main/webapp/static/userImages/";
             String imagename= DateUtil.getCurrentData()+"."+imageFile.getOriginalFilename();
             imageFile.transferTo(new File(path+imagename));
             blogger.setImageName(imagename);

@@ -49,6 +49,8 @@
                    data-options="plain:true,iconCls:'icon-writeblog'" style="width: 150px">写博客</a>
                 <a href="javascript:openTab('评论审核','commentReview.jsp','icon-review')" class="easyui-linkbutton"
                    data-options="plain:true,iconCls:'icon-review'" style="width: 150px">评论审核</a>
+                <a href="javascript:openTab('修改个人信息',modifyBlog.jsp,'icon-grxxxg')" class="easyui-linkbutton"
+                   data-options="plain:true,iconCls:'icon-grxxxg'" style="width: 150px;">修改个人信息</a>
             </div>
             <div title="博客管理" data-options="iconCls:'icon-bkgl'" style="padding:10px;">
                 <a href="javascript:openTab('写博客','writeBlog.jsp','icon-writeblog')" class="easyui-linkbutton"
@@ -69,14 +71,10 @@
             <div title="个人信息管理" data-options="iconCls:'icon-grxx'" style="padding:10px">
                 <a href="javascript:openTab('修改个人信息','modifyInfo.jsp','icon-grxxxg')" class="easyui-linkbutton"
                    data-options="plain:true,iconCls:'icon-grxxxg'" style="width: 150px;">修改个人信息</a>
-            </div>
-            <div title="系统管理" data-options="iconCls:'icon-system'" style="padding:10px">
-                <a href="javascript:openTab('友情链接管理','linkManage.jsp','icon-link')" class="easyui-linkbutton"
-                   data-options="plain:true,iconCls:'icon-link'" style="width: 150px">友情链接管理</a>
                 <a href="javascript:openPasswordModifyDialog()" class="easyui-linkbutton"
                    data-options="plain:true,iconCls:'icon-modifyPassword'" style="width: 150px;">修改密码</a>
-                <a href="javascript:refreshSystemCache()" class="easyui-linkbutton"
-                   data-options="plain:true,iconCls:'icon-refresh'" style="width: 150px;">刷新系统缓存</a>
+            </div>
+            <div title="系统管理" data-options="iconCls:'icon-system'" style="padding:10px">
                 <a href="javascript:logout()" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-exit'"
                    style="width: 150px;">安全退出</a>
             </div>

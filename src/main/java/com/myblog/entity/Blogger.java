@@ -9,7 +9,7 @@ public class Blogger implements Serializable {
     private String userName;
     private String password;
     private String profile;
-    private String nickName;
+    private String nickname;
     private String sign;
     private String imageName;
 
@@ -46,11 +46,11 @@ public class Blogger implements Serializable {
     }
 
     public String getNickName() {
-        return nickName;
+        return nickname;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setNickName(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getSign() {
@@ -76,7 +76,7 @@ public class Blogger implements Serializable {
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", profile='" + profile + '\'' +
-                ", nickName='" + nickName + '\'' +
+                ", nickname='" + nickname + '\'' +
                 ", sign='" + sign + '\'' +
                 ", imageName='" + imageName + '\'' +
                 '}';

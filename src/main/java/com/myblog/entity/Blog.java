@@ -109,5 +109,21 @@ public class Blog {
         this.imageList = imageList;
     }
 
-
+    @Override
+    public String toString() {
+        return "Blog{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", summary='" + summary + '\'' +
+                ", releaseDate=" + releaseDate +
+                ", clickHit=" + clickHit +
+                ", replyHit=" + replyHit +
+                ", content='" + content + '\'' +
+                ", keyWord='" + keyWord + '\'' +
+                ", blogType=" + blogType +
+                ", blogCount=" + blogCount +
+                ", releaseDateStr='" + releaseDateStr + '\'' +
+                ", imageList=" + imageList +
+                '}';
+    }
 }
