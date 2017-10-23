@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/test/CommentTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/admin/commentReview.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/CommentManage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/commentManage.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -114,8 +110,8 @@
       <file leaf-file-name="CommentTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/test/CommentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="456">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#741#757#0" expanded="true" />
               </folding>
@@ -1652,7 +1648,7 @@
       <workItem from="1507017267218" duration="18874000" />
       <workItem from="1507514359673" duration="12623000" />
       <workItem from="1507551848032" duration="41247000" />
-      <workItem from="1507773240451" duration="154779000" />
+      <workItem from="1507773240451" duration="155073000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Blogger对应的dao和mapper文件">
       <created>1508501898407</created>
@@ -1745,7 +1741,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508742005082</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="添加了评论审核前台，修改了评论管理部分，进行了功能测试">
+      <created>1508743313754</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1508743313754</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1781,7 +1784,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227523000" />
+    <option name="totallyTimeSpent" value="227817000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1910,7 +1913,8 @@
     <MESSAGE value="准备完成C层" />
     <MESSAGE value="完成评论功能后台部分，修改了博客信息显示条数" />
     <MESSAGE value="完成评论管理前台部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成评论管理前台部分" />
+    <MESSAGE value="添加了评论审核前台，修改了评论管理部分，进行了功能测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了评论审核前台，修改了评论管理部分，进行了功能测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2419,8 +2423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/test/CommentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="456">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#741#757#0" expanded="true" />
           </folding>
