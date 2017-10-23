@@ -77,14 +77,14 @@
         <th field="userIp" align="center" width=100px">评论者ip</th>
         <th field="blog" align="center" width="150px" formatter="formatBlogTile">博客标题</th>
         <th field="content" align="center" width="200px">评论内容</th>
-        <th field="commentDate" align="center" width="50px">评论日期</th>
+        <th field="date" align="center" width="50px">评论日期</th>
         <th field="verifyState" align="center" width="50px" formatter="formatState">审核状态</th>
     </tr>
     </thead>
 </table>
 <div id="tb">
     <div>
-        <a href="javascript:deleteComment()" class="easyui-linkbutton" iconCls="icon-ok" plain="true">删除</a>
+        <a href="javascript:deleteComment()" class="easyui-linkbutton" iconCls="icon-remove" plain="true">删除</a>
         <a href="javascript:reload()" class="easyui-linkbutton" iconCls="icon-reload" plain="true">刷新</a>
     </div>
 </div>

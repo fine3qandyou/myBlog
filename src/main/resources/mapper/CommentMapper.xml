@@ -29,7 +29,7 @@
         </if>
     </select>
 
-    <select id="getTotal" parameterType="Map">
+    <select id="getTotal" parameterType="Map" resultType="Long">
         SELECT COUNT(id) FROM blog.t_comment
         <where>
             <if test="verifyState != null">
