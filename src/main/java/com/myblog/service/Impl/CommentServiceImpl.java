@@ -3,15 +3,15 @@ package com.myblog.service.Impl;
 import com.myblog.dao.CommentDao;
 import com.myblog.entity.Comment;
 import com.myblog.entity.PageBean;
+import com.myblog.service.CommentService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 @Service
-public class CommentServiceImpl {
+public class CommentServiceImpl implements CommentService{
 
     @Resource
     private CommentDao commentDao;
@@ -23,7 +23,6 @@ public class CommentServiceImpl {
     public PageBean<Comment> listByPage(PageBean<Comment> pageBean){
         pageBean.getMap().put("start",pageBean.getStart());
         pageBean.getMap().put("end",pageBean.getEnd());
-        List<Comment> list = new ArrayList<Comment>();
         pageBean.setResult(commentDao.listByPage(pageBean.getMap()));
         pageBean.setTotal(commentDao.getTotal(pageBean.getMap()));
         return pageBean;
