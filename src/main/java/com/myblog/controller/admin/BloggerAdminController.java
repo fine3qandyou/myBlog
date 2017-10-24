@@ -27,7 +27,7 @@ public class BloggerAdminController {
         Blogger blogger = bloggerService.getBloggerData();
         String str = JSONObject.toJSONString(blogger);
         JSONObject result = JSONObject.parseObject(str);
-        ResponseUtil.write(response,str);
+        ResponseUtil.write(response,result);
     }
 
     @RequestMapping(value = "/save")

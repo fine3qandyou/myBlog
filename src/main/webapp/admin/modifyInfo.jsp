@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE HTML>
@@ -8,20 +8,17 @@
     <!--加载easyui-->
     <%@include file="./common/head.jspf"%>
     <script type="text/javascript">
-        function setBlogData() {
+        $(function setBlogData() {
             //ajax请求获取blog数据
-            $.get("${blog}/admin/blogger/getBloggerData.do",function(result){
-                if(result.success){
-                    $('blogTypeId').val(result.blogType.typeName);
-                    $('keyWord').val(result.keyWord);
-                    $('profile').val(result.profile);
-                    $('username').val(result.username);
-                }
-            },"json")
-        }
-        setBlogData();
+            $.post("${blog}/admin/blogger/getBloggerData.do",function(result){
+                    var json = JSON.parse(result);
+                    $('#nickname').val(json.nickName);
+                    $('#sign').val(json.sign);
+                    $('#profile').val(json.profile);
+                    $('#username').val(json.userName);
+            })
+        })
     </script>
-
     <script>
         function submitData() {
             $('#fm').form('submit',{
@@ -50,11 +47,9 @@
     <form method="post" id="fm" enctype="multipart/form-data">
         <table cellspacing="20px">
             <tr>
-                <td width="80px">用户名：</td>
+                <td>用户名：</td>
                 <td>
-                    <td>
-                        <input type="text" id="username" name="username" style="width:200px" readonly="readonly"/>
-                    </td>
+                    <input type="text" id="username" name="username" style="width:200px" readonly="readonly"/>
                 </td>
             </tr>
             <tr>
@@ -87,5 +82,6 @@
         </table>
     </form>
 </div>
+
 </body>
 </html>

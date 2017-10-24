@@ -35,21 +35,6 @@
             })
         })
     </script>
-
-    <%--<script type="text/javascript">--%>
-        <%--function setBlogData() {--%>
-            <%--var id = window.location.search.substring(1);--%>
-            <%--//ajax请求获取blog数据--%>
-            <%--$.get("${blog}/admin/blog/get.do",id,function(result){--%>
-                <%--if(result.success){--%>
-                    <%--$('title').value=result.title.val;--%>
-                    <%--$('blogTypeId').value=result.blogType.typeName.val;--%>
-                    <%--$('keyWord').value=result.keyWord.val;--%>
-                <%--}--%>
-            <%--},"json")--%>
-        <%--}--%>
-        <%--setBlogData();--%>
-    <%--</script>--%>
     
     <script type="text/javascript">
         function submitData() {
