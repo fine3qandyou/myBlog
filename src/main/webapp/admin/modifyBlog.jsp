@@ -67,7 +67,7 @@
             } else if (content == null || content == '') {
                 $.messager.alert("系统提示", "请编辑博客内容！");
             } else {
-                $.post("${blog}/admin/blog/save.do",
+                $.post("${blog}/admin/blog/saveBlog.do",
                     {
                         'id': '${param.id}',
                         'title' : title,
@@ -107,7 +107,7 @@
             <td><select id="blogTypeId" class="easyui-combobox"
                         name="blogType.id" style="width:154px" editable="false"
                         panelHeight="auto">
-                <option value=""></option>
+                <option>请选择博客类型...</option>
                 <c:forEach items="${blogTypeList }" var="blogType">
                     <option value="${blogType.id }">${blogType.typeName }</option>
                 </c:forEach>

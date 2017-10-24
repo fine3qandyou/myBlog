@@ -49,7 +49,7 @@
                    data-options="plain:true,iconCls:'icon-writeblog'" style="width: 150px">写博客</a>
                 <a href="javascript:openTab('评论审核','commentReview.jsp','icon-review')" class="easyui-linkbutton"
                    data-options="plain:true,iconCls:'icon-review'" style="width: 150px">评论审核</a>
-                <a href="javascript:openTab('修改个人信息',modifyBlog.jsp,'icon-grxxxg')" class="easyui-linkbutton"
+                <a href="javascript:openTab('修改个人信息','modifyInfo.jsp','icon-grxxxg')" class="easyui-linkbutton"
                    data-options="plain:true,iconCls:'icon-grxxxg'" style="width: 150px;">修改个人信息</a>
             </div>
             <div title="博客管理" data-options="iconCls:'icon-bkgl'" style="padding:10px;">

@@ -1,36 +1,25 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML>
 <html>
 <head>
     <title>个人信息修改</title>
     <!--加载easyui-->
     <%@include file="./common/head.jspf"%>
-    <!--加载ueditor-->
-    <script type="text/javascript" charset="utf-8"
-            src="${blog}/static/ueditor1.4.3.3/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8"
-            src="${blog}/static/ueditor1.4.3.3/ueditor.all.min.js"></script>
-    <script type="text/javascript" charset="utf-8"
-            src="${blog}/static/ueditor1.4.3.3/lang/zh-cn/zh-cn.js"></script>
-
-    <script>
-        var ue = UE.getEditor('profile');
-        ue.addListener('ready',function () {
-            UE.ajax.request('${blog}/admin/blogger/getBloggerData.do',{
-                method: "post",
-                async: false,
-                data: {},
-                onsuccess: function(result) {
-                    //result = eval("(" + result.responseText + ")");
-                    result = JSON.parse(result.responseText);
-                    $("#nickName").val(result.nickName);
-                    $("#sign").val(result.sign);
-                    UE.getEditor('profile').setContent(result.profile);
+    <script type="text/javascript">
+        function setBlogData() {
+            //ajax请求获取blog数据
+            $.get("${blog}/admin/blogger/getBloggerData.do",function(result){
+                if(result.success){
+                    $('blogTypeId').val(result.blogType.typeName);
+                    $('keyWord').val(result.keyWord);
+                    $('profile').val(result.profile);
+                    $('username').val(result.username);
                 }
-            })
-        })
+            },"json")
+        }
+        setBlogData();
     </script>
 
     <script>
@@ -44,7 +33,6 @@
                     return $(this).form("validate");
                 },//进行验证，通过才让提交
                 success:function (result) {
-                    // var result = eval("(" + result + ")"); //将json格式的result转换成js对象
                     var result = JSON.parse(result);
                     if(result.success) {
                         $.messager.alert("系统提示", "博主信息更新成功");
@@ -64,15 +52,15 @@
             <tr>
                 <td width="80px">用户名：</td>
                 <td>
-                    <input type="hidden" id="id" name="id" value="${blogger.id}"/>
-                    <input type="text" id="userName" name="userName" style="width:200px" readonly="readonly" value="${blogger.userName}"/>
+                    <td>
+                        <input type="text" id="username" name="username" style="width:200px" readonly="readonly"/>
+                    </td>
                 </td>
             </tr>
             <tr>
                 <td>昵称：</td>
                 <td>
-                    <input type="text" id="nickname" name="nickName" style="width:200px"
-                    />
+                    <input type="text" id="nickname" name="nickName" style="width:200px"/>
                 </td>
             </tr>
             <tr>
@@ -88,10 +76,9 @@
                 </td>
             </tr>
             <tr>
-                <td>个人简介：</td>
+                <td>个人简介:</td>
                 <td>
-                    <input type="text" id="profile" name="sign" style="width:400px"/>
-                </td>
+                    <input type="text" id="profile" name="profile" style="width:800px"/>
             </tr>
             <tr>
                  <td></td>
