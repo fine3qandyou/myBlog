@@ -30,7 +30,7 @@
     <update id="updateBlogger" parameterType="Blogger">
         UPDATE blog.t_blogger
         <set>
-            <if test="nickname!=null and nickname!=''">
+            <if test="nickName!=null and nickName!=''">
                 nickname=#{nickname},
             </if>
             <if test="password!=null and password!=''">
@@ -42,7 +42,7 @@
             <if test="profile!=null and profile!=''">
                 profile=#{profile},
             </if>
-            <if test="imagename!=null and imagename!=''">
+            <if test="imageName!=null and imageName!=''">
                 imagename=#{imagename},
             </if>
         </set>
