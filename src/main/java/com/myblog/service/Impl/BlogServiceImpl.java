@@ -64,4 +64,8 @@ public class BlogServiceImpl implements BlogService{
         return pageBean;
     }
 
+    public Blog getPrevBlog(Integer id){return blogDao.getPrevBlog(id);}
+
+    public Blog getNextBlog(Integer id){return blogDao.getNextBlog(id);}
+
 }

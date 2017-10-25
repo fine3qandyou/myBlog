@@ -94,4 +94,12 @@
         SELECT * from t_blog where id=#{id}
     </select>
 
+    <select id="getPrevBlog" resultMap="BlogResult" parameterType="Integer">
+        SELECT * FROM blog.t_blog WHERE id&lt;#{id} ORDER BY id DESC limit 1
+    </select>
+
+    <select id="getNextBlog" resultMap="BlogResult" parameterType="Integer">
+        SELECT * FROM blog.t_blog WHERE id>#{id} ORDER BY id DESC limit 1
+    </select>
+
 </mapper>

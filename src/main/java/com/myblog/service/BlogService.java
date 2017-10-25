@@ -29,4 +29,8 @@ public interface BlogService {
 
     // 分页查询博客
     public PageBean<Blog> listBlog(String title, PageBean<Blog> pageBean);
+
+    public Blog getPrevBlog(Integer id);
+
+    public Blog getNextBlog(Integer id);
 }
