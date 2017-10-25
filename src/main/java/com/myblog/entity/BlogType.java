@@ -12,6 +12,7 @@ public class BlogType implements Serializable{
     private Integer id;
     private String typeName;
     private Integer orderNum;
+    private Integer blogCount;
 
     public BlogType() {
     }
@@ -24,6 +25,18 @@ public class BlogType implements Serializable{
 
     public BlogType(String typeName, Integer orderNum) {
         this.typeName = typeName;
+        this.orderNum = orderNum;
+    }
+
+    public Integer getBlogCount() {
+        return blogCount;
+    }
+
+    public void setBlogCount(Integer blogCount) {
+        this.blogCount = blogCount;
+    }
+
+    public void setOrderNum(Integer orderNum) {
         this.orderNum = orderNum;
     }
 
@@ -57,6 +70,7 @@ public class BlogType implements Serializable{
                 "id=" + id +
                 ", typeName='" + typeName + '\'' +
                 ", orderNum=" + orderNum +
+                ", blogCount=" + blogCount +
                 '}';
     }
 }

@@ -27,6 +27,22 @@ public class Blog {
         this.title = title;
     }
 
+    public Integer getBlogCount() {
+        return blogCount;
+    }
+
+    public void setBlogCount(Integer blogCount) {
+        this.blogCount = blogCount;
+    }
+
+    public String getReleaseDateStr() {
+        return releaseDateStr;
+    }
+
+    public void setReleaseDateStr(String releaseDateStr) {
+        this.releaseDateStr = releaseDateStr;
+    }
+
     private List<String> imageList = new LinkedList<String>();//博客里存的图片，主要用于展示缩略图
 
     public Integer getId() {
