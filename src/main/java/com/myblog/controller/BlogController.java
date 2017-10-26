@@ -59,7 +59,7 @@ public class BlogController {
         modelAndView.addObject("commentList",commentList);
 
         modelAndView.addObject("commonPage", "foreground/blog/blogDetail.jsp");
-        modelAndView.addObject("title", blog.getTitle() + " - 熊平的博客");
+        modelAndView.addObject("title", blog.getTitle() + " - 邱天的博客");
 
         // 存入上一篇和下一篇的显示代码
         modelAndView.addObject("pageCode", PageUtil.getPrevAndNextPageCode(

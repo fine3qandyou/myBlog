@@ -61,15 +61,13 @@
         },
         "share" : {},
         "image" : {
-            "viewList" : [ "weixin", "tsina", "qzone", "tieba", "renren",
-                "linkedin" ],
+            "viewList" : [ "weixin", "tsina", "qzone", "tieba", "linkedin" ],
             "viewText" : "分享到：",
             "viewSize" : "24"
         },
         "selectShare" : {
             "bdContainerClass" : null,
-            "bdSelectMiniList" : [ "weixin", "tsina", "qzone", "tieba",
-                "renren", "linkedin" ]
+            "bdSelectMiniList" : [ "weixin", "tsina", "qzone", "tieba", "linkedin" ]
         }
     };
     with (document)
