@@ -6,7 +6,9 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.myblog.entity.Blog;
 import com.myblog.entity.PageBean;
+import com.myblog.lucence.BlogIndex;
 import com.myblog.service.BlogService;
+import com.myblog.service.CommentService;
 import com.myblog.util.ResponseUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.test.context.ContextConfiguration;
@@ -22,6 +24,10 @@ public class BlogAdminController {
 
     @Resource
     private BlogService blogService;
+    @Resource
+    private CommentService commentService;
+    @Resource
+    private BlogIndex blogIndex;
 
     @RequestMapping(value = "/listBlog")
     public void listBlog(@RequestParam(value = "page", required = false) String page,
@@ -53,8 +59,10 @@ public class BlogAdminController {
         int saveOrUpdate=0;
         if(blog.getId()==null){
             saveOrUpdate=blogService.saveBlog(blog);
+            blogIndex.addIndex(blog);
         }else{
             saveOrUpdate=blogService.updateBlog(blog);
+            blogIndex.updateIndex(blog);
         }
         JSONObject result=new JSONObject();
         if(saveOrUpdate>0){
@@ -69,8 +77,9 @@ public class BlogAdminController {
     public void deleteBlog(@RequestParam(value = "ids")String ids,HttpServletResponse response)throws Exception{
         String[] target=ids.split(",");
         for(int i=0;i<target.length;i++){
-            int id=Integer.parseInt(target[i]);
-            blogService.deleteBlog(id);
+            commentService.deleteCommentByBlogId(Integer.parseInt(target[i]));
+            blogService.deleteBlog(Integer.parseInt(target[i]));
+            blogIndex.deleteIndex(target[i]);
         }
         JSONObject result=new JSONObject();
         result.put("success",true);

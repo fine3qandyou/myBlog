@@ -2,8 +2,10 @@ package com.myblog.controller;
 
 import com.myblog.entity.Blog;
 import com.myblog.entity.Comment;
+import com.myblog.lucence.BlogIndex;
 import com.myblog.service.BlogService;
 import com.myblog.service.CommentService;
+import com.myblog.util.PageUtil;
 import com.myblog.util.StringUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,8 +29,11 @@ public class BlogController {
     @Resource
     private CommentService commentService;
 
+    @Resource
+    private BlogIndex blogIndex;
+
     @RequestMapping(value = "/articles/{id}")
-    public ModelAndView details(@PathVariable(value = "id")String id, HttpServletRequest){
+    public ModelAndView details(@PathVariable(value = "id")String id, HttpServletRequest request){
 
         int blogId = Integer.parseInt(id);
         ModelAndView modelAndView = new ModelAndView();
