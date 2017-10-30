@@ -10,4 +10,13 @@ public class DateUtil {
         SimpleDateFormat sf=new SimpleDateFormat("yyyyMMddhhmmss");
         return sf.format(date);
     }
+
+    public static String dateFormat(Date date,String format) {
+        String result = "";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format);
+        if(date != null){
+            result = simpleDateFormat.format(date);
+        }
+        return result;
+    }
 }
