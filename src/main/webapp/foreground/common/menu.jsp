@@ -3,7 +3,7 @@
 <script type="text/javascript">
     function checkData() {
 
-        var q = document.getElementById("search").value.trim();
+        var q = document.getElementById("q").value.trim();
         if(q == null || q == "") {
             alert("请输入您要查询的关键字！");
             return false;
@@ -26,7 +26,7 @@
                 </ul>
                 <form action="${pageContext.request.contextPath}/blog/search.html" class="navbar-form navbar-right" role="search" method="post" onsubmit="return checkData()">
                     <div class="form-group">
-                        <input type="text" id="search" name="search" value="${q}" class="form-control" placeholder="请输入要查询的关键字">
+                        <input type="text" id="q" name="q" value="${q}" class="form-control" placeholder="请输入要查询的关键字">
                     </div>
                     <button type="submit" class="btn btn-default">搜索</button>
                 </form>
