@@ -30,7 +30,7 @@ public class BlogIndex {
     //创建索引
     public Directory directory;
     //索引存储目录
-    public String indexDir = "J:/resourcecode/myBlog/src/main/webapp/static/lucenceIndex/";
+    public String indexDir = "J:/resourcecode/myBlog/src/main/webapp/static/luceneIndex/";
 
     public IndexWriter getIndexWriter() throws IOException {
         //实例化索引目录
