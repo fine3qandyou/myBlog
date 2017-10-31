@@ -10,6 +10,7 @@ import com.myblog.util.StringUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
@@ -73,6 +74,32 @@ public class BlogController {
 
         modelAndView.setViewName("mainTemp");
 
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/search")
+    public ModelAndView search(@RequestParam(value = "data" , required = false)String data,
+                               @RequestParam(value = "page" , required = false)String page,
+                               HttpServletRequest request) throws Exception{
+        int pageSize = 10;
+        ModelAndView modelAndView = new ModelAndView();
+        List<Blog> blogIndexList = blogIndex.searchBlog(data);
+        if(page == null) { //page为空表示第一次搜索
+            page = "1";
+        }
+        int fromIndex = (Integer.parseInt(page) - 1) * pageSize; // 开始索引
+        int toIndex = blogIndexList.size() >= Integer.parseInt(page) * pageSize ? Integer
+                .parseInt(page) * pageSize
+                : blogIndexList.size();
+        modelAndView.addObject("blogIndexList", blogIndexList.subList(fromIndex, toIndex));
+        modelAndView.addObject("pageCode", PageUtil.getUpAndDownPageCode(
+                Integer.parseInt(page), blogIndexList.size(), data, pageSize,
+                request.getServletContext().getContextPath()));
+        modelAndView.addObject("data", data); // 用于数据的回显
+        modelAndView.addObject("resultTotal", blogIndexList.size()); // 查询到的总记录数
+        modelAndView.addObject("commonPage", "foreground/blog/searchResult.jsp");
+        modelAndView.addObject("title", "搜索'" + data + "'的结果 - 邱天的博客");
+        modelAndView.setViewName("mainTemp");
         return modelAndView;
     }
 }
