@@ -58,7 +58,7 @@
         </div>
     </div>
     <script type="application/javascript">
-        alert(${blogger.userName})
+        alert(${blogger.imageName})
     </script>
     <div class="row">
         <div class="col-md-3">
