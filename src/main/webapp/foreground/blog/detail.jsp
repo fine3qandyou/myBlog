@@ -46,7 +46,7 @@
                         &nbsp;&nbsp;无
                     </c:when>
                     <c:otherwise>
-                        <!-- 循环遍历标签 --》
+                        <!-- 循环遍历标签 -->
                         <c:forEach items="${keyWorlds}" var="keyWorld">
                             <!-- 标签显示为超链接 点击查询跟类型的博客 -->
                             &nbsp;&nbsp;<a href="${pageContext.request.contextPath}/blog/search.html?q=${keyWorld}">${keyWorld}</a>&nbsp;
