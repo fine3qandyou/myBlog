@@ -98,7 +98,7 @@ public class BlogController {
         modelAndView.addObject("data", data); // 用于数据的回显
         modelAndView.addObject("resultTotal", blogIndexList.size()); // 查询到的总记录数
         modelAndView.addObject("commonPage", "foreground/blog/searchResult.jsp");
-        modelAndView.addObject("title", "搜索'" + data + "'的结果 - 邱天的博客");
+        modelAndView.addObject("title", "搜索'" + data + "'的结果 - 熊平的博客");
         modelAndView.setViewName("mainTemp");
         return modelAndView;
     }

@@ -7,7 +7,7 @@
         博主信息
     </div>
     <div class="user_image">
-        <img src="${pageContext.request.contextPath}/static/userImages/${blogger.imageName}" />
+        <img src="${pageContext.request.contextPath}/static/userImages/${blogger.imageName}.jpg" />
     </div>
     <div class="nickName"><strong><font style="color: #EE6A50">昵称：${blogger.nickName}</font></strong></div>
     <%-- <div class="visitNum">访问量：6666</div>  --%>
@@ -30,11 +30,11 @@
 </div>
 
 <div class="data_list">
-    <div class="data_list_title">
-        <img
-                src="${pageContext.request.contextPath}/static/images/byDate_icon.png" />
-        文章存档
-    </div>
+    <%--<div class="data_list_title">--%>
+        <%--<img--%>
+                <%--src="${pageContext.request.contextPath}/static/images/byDate_icon.png" />--%>
+        <%--文章存档--%>
+    <%--</div>--%>
     <div class="datas">
         <ul>
             <c:forEach items="${blogTimeList }" var="blog">

@@ -11,6 +11,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class ShiroTest {
     @Test
     public void md5(){
-        System.out.print(MD5Util.md5("123","asd"));
+        System.out.print(MD5Util.md5("q12","lalala"));
     }
 }
