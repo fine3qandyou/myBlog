@@ -3,8 +3,8 @@
 
 <div class="col-md-4">
     <div class="blog">
-        <a href="${pageContext.request.contextPath}/index.html" style="text-decoration:none">
-            <h1><strong>邱天的博客站</strong></h1>
+        <a href="${pageContext.request.contextPath}/index.jsp" style="text-decoration:none">
+            <h1>邱天的博客站</h1>
         </a>
     </div>
 </div>

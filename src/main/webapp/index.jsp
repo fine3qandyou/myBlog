@@ -25,7 +25,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <div class="blog"><strong>邱天的博客</strong></div>
+            <div class="blog">邱天的博客</div>
         </div>
         <div class="col-md-8">
             <iframe style="float:right" width="420" scrolling="no" height="60" frameborder="0"
@@ -41,10 +41,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a class="navbar-brand" href="#">博客首页</a></li>
-                            <li><a class="navbar-brand" href="#">关于博主</a></li>
-                            <li><a class="navbar-brand" href="#">我的相册</a></li>
-                            <li><a class="navbar-brand" href="#">资源小站</a></li>
+                            <li class="active"><a href="${pageContext.request.contextPath}/index.jsp">博客首页</a></li>
+                            <li><a href="${pageContext.request.contextPath}/blogger/aboutme.do">关于博主</a></li>
+                            <li><a href="${pageContext.request.contextPath}/blogger/myalbum.do">我的相册</a></li>
+                            <li><a href="${pageContext.request.contextPath}/blogger/resource.do">资源小站</a></li>
                         </ul>
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group">
@@ -57,9 +57,6 @@
             </nav>
         </div>
     </div>
-    <script type="application/javascript">
-        alert(${blogger.imageName})
-    </script>
     <div class="row">
         <div class="col-md-3">
             <div class="data_list">
@@ -82,25 +79,25 @@
                 <div class="datas">
                     <ul>
                         <c:forEach items="${blogTypeList}" var="blogType">
-                            <li><span><a href="#">${blogType.typeName}（${blogType.blogCount}）</a></span></li>
+                            <li><span><a href="#">${blogType.typeName}(${blogType.blogCount})</a></span></li>
                         </c:forEach>
                     </ul>
                 </div>
             </div>
 
-            <div class="data_list">
-                <div class="data_list_title">
-                    <img src="${pageContext.request.contextPath}/static/images/byDate_icon.png"/>
-                    文章存档
-                </div>
-                <div class="datas">
-                    <ul>
-                        <c:forEach items="${blogList}" var="blog">
-                            <li><span><a href="#">${blog.releaseDateStr}（${blog.blogCount}）</a></span></li>
-                        </c:forEach>
-                    </ul>
-                </div>
-            </div>
+            <%--<div class="data_list">--%>
+                <%--<div class="data_list_title">--%>
+                    <%--<img src="${pageContext.request.contextPath}/static/images/byDate_icon.png"/>--%>
+                    <%--文章存档--%>
+                <%--</div>--%>
+                <%--<div class="datas">--%>
+                    <%--<ul>--%>
+                        <%--<c:forEach items="${blogList}" var="blog">--%>
+                            <%--<li><span><a href="#">${blog.releaseDateStr}(${blog.blogCount})</a></span></li>--%>
+                        <%--</c:forEach>--%>
+                    <%--</ul>--%>
+                <%--</div>--%>
+            <%--</div>--%>
 
         </div>
 

@@ -14,6 +14,10 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
+  <!-- 添加获取博主信息的监听器,用于在页面中获取信息 -->
+  <listener>
+    <listener-class>com.myblog.listener.InitBloggerData</listener-class>
+  </listener>
   <!--spring mvc核心servlet-->
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
@@ -48,7 +52,18 @@
     <filter-name>encodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
-  <listener>
-    <listener-class>com.myblog.listener.InitBloggerData</listener-class>
-  </listener>
+  <!-- 添加shiro过滤器 -->
+  <filter>
+    <filter-name>shiroFilter</filter-name>
+    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    <init-param>
+      <!-- 该值缺省为false，表示声明周期由SpringApplicationContext管理，设置为true表示ServletContainer管理 -->
+      <param-name>targetFilterLifecycle</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>shiroFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
