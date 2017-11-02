@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/controller/BloggerController.class" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/controller/BloggerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/myblog/listener/InitBloggerData.class" afterPath="$PROJECT_DIR$/target/classes/com/myblog/listener/InitBloggerData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/listener/InitBloggerData.class" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/listener/InitBloggerData.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/controller/CommentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/controller/CommentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/listener/InitBloggerData.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/listener/InitBloggerData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/common/head.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/common/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/common/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/common/menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-beans.xml" afterPath="$PROJECT_DIR$/target/classes/spring-beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/spring-beans.xml" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/spring-beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/index.jsp" afterPath="$PROJECT_DIR$/target/myBlog/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -124,11 +113,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="94" column="74" lean-forward="true" selection-start-line="94" selection-start-column="74" selection-end-line="94" selection-end-column="74" />
+            <state relative-caret-position="504">
+              <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -196,11 +185,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="222" column="37" lean-forward="false" selection-start-line="222" selection-start-column="37" selection-end-line="222" selection-end-column="37" />
+            <state relative-caret-position="330">
+              <caret line="213" column="66" lean-forward="false" selection-start-line="213" selection-start-column="66" selection-end-line="213" selection-end-column="66" />
               <folding>
                 <element signature="n#STYLE#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#SPAN#0;n#P#0;n#DIV#1;n#DIV#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -342,10 +331,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/foreground/common/head.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/foreground/common/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/listener/InitBloggerData.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
       </list>
     </option>
   </component>
@@ -1592,7 +1581,7 @@
       <workItem from="1507773240451" duration="170838000" />
       <workItem from="1508808797203" duration="53454000" />
       <workItem from="1509344796900" duration="15466000" />
-      <workItem from="1509447712318" duration="36327000" />
+      <workItem from="1509447712318" duration="36392000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Blogger对应的dao和mapper文件">
       <created>1508501898407</created>
@@ -1818,7 +1807,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509526130660</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="完成listener，将基本信息保存到application">
+      <created>1509610543065</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1509610543065</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1854,7 +1850,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348829000" />
+    <option name="totallyTimeSpent" value="348894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1973,7 +1969,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成Blogger的Service层，下一步完成Controller部分" />
     <MESSAGE value="修复bloggermapper" />
     <MESSAGE value="个人信息修改页面待添加shiro之后再完善" />
     <MESSAGE value="改掉了eval函数" />
@@ -1998,7 +1993,8 @@
     <MESSAGE value="完成pageUtil" />
     <MESSAGE value="完成blogController" />
     <MESSAGE value="完成shiro部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成shiro部分" />
+    <MESSAGE value="完成listener，将基本信息保存到application" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成listener，将基本信息保存到application" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2359,17 +2355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="222" column="37" lean-forward="false" selection-start-line="222" selection-start-column="37" selection-end-line="222" selection-end-column="37" />
-          <folding>
-            <element signature="n#STYLE#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#SPAN#0;n#P#0;n#DIV#1;n#DIV#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -2454,10 +2439,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="94" column="74" lean-forward="true" selection-start-line="94" selection-start-column="74" selection-end-line="94" selection-end-column="74" />
+        <state relative-caret-position="504">
+          <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="213" column="66" lean-forward="false" selection-start-line="213" selection-start-column="66" selection-end-line="213" selection-end-column="66" />
+          <folding>
+            <element signature="n#STYLE#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#SPAN#0;n#P#0;n#DIV#1;n#DIV#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
