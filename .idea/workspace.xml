@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/myblog/entity/Blog.class" afterPath="$PROJECT_DIR$/target/classes/com/myblog/entity/Blog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/myblog/listener/InitBloggerData.class" afterPath="$PROJECT_DIR$/target/classes/com/myblog/listener/InitBloggerData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/entity/Blog.class" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/entity/Blog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/listener/InitBloggerData.class" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/com/myblog/listener/InitBloggerData.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/entity/Blog.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/entity/Blog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/listener/InitBloggerData.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/listener/InitBloggerData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/blog/blogDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/blog/blogDetail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/blog/blogList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/blog/blogList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/index.jsp" afterPath="$PROJECT_DIR$/target/myBlog/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BlogMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/mapper/BlogMapper.xml" afterPath="$PROJECT_DIR$/target/myBlog/WEB-INF/classes/mapper/BlogMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1704,7 +1703,7 @@
       <workItem from="1507773240451" duration="170838000" />
       <workItem from="1508808797203" duration="53454000" />
       <workItem from="1509344796900" duration="15466000" />
-      <workItem from="1509447712318" duration="44388000" />
+      <workItem from="1509447712318" duration="44785000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Blogger对应的dao和mapper文件">
       <created>1508501898407</created>
@@ -1944,7 +1943,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509610579445</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="完成主界面">
+      <created>1509628700699</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1509628700699</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1980,7 +1986,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356890000" />
+    <option name="totallyTimeSpent" value="357287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2099,7 +2105,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="个人信息修改页面待添加shiro之后再完善" />
     <MESSAGE value="改掉了eval函数" />
     <MESSAGE value="改掉了eval函数，加入bootstrap包" />
     <MESSAGE value="更新了评论功能的MV层" />
@@ -2124,7 +2129,8 @@
     <MESSAGE value="完成shiro部分" />
     <MESSAGE value="完成listener，将基本信息保存到application" />
     <MESSAGE value="完成后台登录界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成后台登录界面" />
+    <MESSAGE value="完成主界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成主界面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

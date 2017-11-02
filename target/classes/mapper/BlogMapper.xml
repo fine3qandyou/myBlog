@@ -102,4 +102,5 @@
         SELECT * FROM blog.t_blog WHERE id>#{id} ORDER BY id DESC limit 1
     </select>
 
+
 </mapper>
