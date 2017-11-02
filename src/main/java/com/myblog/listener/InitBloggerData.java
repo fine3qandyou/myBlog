@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import java.util.HashMap;
 import java.util.List;
 
 @Component
@@ -28,7 +29,7 @@ public class InitBloggerData implements ServletContextListener, ApplicationConte
         //获取博主信息service
         BloggerService bloggerService = applicationContext.getBean(BloggerService.class);
         //获取博客service
-        //BlogService blogService = applicationContext.getBean(BlogService.class);
+        BlogService blogService = applicationContext.getBean(BlogService.class);
         //获取博客类型信息
         List<BlogType> blogTypeList = blogTypeService.getBlogTypeData();
         application.setAttribute("blogTypeList", blogTypeList);
@@ -38,8 +39,8 @@ public class InitBloggerData implements ServletContextListener, ApplicationConte
         blogger.setPassword(null);
         application.setAttribute("blogger",blogger);
         //获取博客信息
-        //List<Blog> blogList = blogService.listBlog();
-        //application.setAttribute("blogList",blogService);
+        List<Blog> blogList = blogService.listBlog(new HashMap());
+        application.setAttribute("blogList",blogList);
     }
 
     public void contextDestroyed(ServletContextEvent sce) {

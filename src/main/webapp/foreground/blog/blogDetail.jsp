@@ -78,7 +78,7 @@
 		<br><br>
 		<div class="xian" style="clear:both; margin:0 auto; border-top:1px solid #ddd"></div>
 		<div style="line-height:3; background-color: #F8F8FF">
-			<font style="color:#8B2323">作者：熊平&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尊重博主原创文章，转载请注明文章出于此处。</font>
+			<font style="color:#8B2323">作者：邱天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尊重博主原创文章，转载请注明文章出于此处。</font>
 		</div>
 		<div class="xian" style="margin:0px auto; border-top:1px solid #ddd"></div>
 		<div class="blog_content">${blog.content }</div>
