@@ -33,4 +33,6 @@ public interface BlogService {
     public Blog getPrevBlog(Integer id);
 
     public Blog getNextBlog(Integer id);
+
+    public List<Blog> showAll();
 }

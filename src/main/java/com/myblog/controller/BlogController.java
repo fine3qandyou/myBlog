@@ -1,11 +1,13 @@
 package com.myblog.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.myblog.entity.Blog;
 import com.myblog.entity.Comment;
 import com.myblog.lucence.BlogIndex;
 import com.myblog.service.BlogService;
 import com.myblog.service.CommentService;
 import com.myblog.util.PageUtil;
+import com.myblog.util.ResponseUtil;
 import com.myblog.util.StringUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,10 +17,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.servlet.http.HttpServletResponse;
+import java.util.*;
 
 @Controller
 @RequestMapping(value = "/blog")
@@ -101,5 +101,10 @@ public class BlogController {
         modelAndView.addObject("title", "搜索'" + data + "'的结果 - 熊平的博客");
         modelAndView.setViewName("mainTemp");
         return modelAndView;
+    }
+
+    @RequestMapping(value = "/show")
+    public void show(HttpServletRequest request){
+        request.setAttribute("list",blogService.showAll());
     }
 }

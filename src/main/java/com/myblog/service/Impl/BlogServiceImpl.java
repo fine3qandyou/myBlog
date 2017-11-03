@@ -68,4 +68,6 @@ public class BlogServiceImpl implements BlogService{
 
     public Blog getNextBlog(Integer id){return blogDao.getNextBlog(id);}
 
+    public List<Blog> showAll(){return blogDao.listBlog(new HashMap<>());}
+
 }
