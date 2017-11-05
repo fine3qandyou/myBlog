@@ -14,7 +14,7 @@
 	}
 	
 	function loadimage(){
-		document.getElementById("randImage").src="${pageContext.request.contextPath}/images.jsp?"+Math.random();
+		document.getElementById("randImage").src="${pageContext.request.contextPath}/image.jsp?"+Math.random();
 	}
 	
 	function submitData() {
@@ -108,7 +108,7 @@
 							<c:when test="${status.index<10 }">
 								<div class="comment">
 									<span><font>
-											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userIp }</font>
+											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userId }</font>
 										&nbsp;&nbsp;&nbsp;&nbsp;${comment.content }&nbsp;&nbsp;&nbsp;&nbsp;
 										[<fmt:formatDate value="${comment.commentDate }" type="date"
 											pattern="yyyy-MM-dd HH:mm" />] </span>
@@ -117,7 +117,7 @@
 							<c:otherwise>
 								<div class="otherComment">
 									<span><font>
-											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userIp }</font>
+											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userId }</font>
 										&nbsp;&nbsp;&nbsp;&nbsp;${comment.content }&nbsp;&nbsp;&nbsp;&nbsp;
 										[<fmt:formatDate value="${comment.commentDate }" type="date"
 											pattern="yyyy-MM-dd HH:mm" />] </span>

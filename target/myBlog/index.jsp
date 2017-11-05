@@ -106,9 +106,9 @@
             <div class="data_list_title">
                 <img src="${pageContext.request.contextPath}/static/images/list_icon.png"/>&nbsp;最新博客
             </div>
-            <div class="datas" href="${pageContext.request.contextPath}/blog/show.do">
+            <div class="datas">
                 <ul>
-                    <c:forEach items="${list}" var="blog">
+                    <c:forEach items="${blogList}" var="blog">
                         <li style="margin-bottom: 30px">
 					  	<span class="title">
 					  		<a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html">${blog.title}</a>
