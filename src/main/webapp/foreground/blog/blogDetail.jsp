@@ -104,7 +104,7 @@
 									<span><font>
 											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userIp }</font>
 										&nbsp;&nbsp;&nbsp;&nbsp;${comment.content }&nbsp;&nbsp;&nbsp;&nbsp;
-										[<fmt:formatDate value="${comment.commentDate }" type="date"
+										[<fmt:formatDate value="${comment.date}" type="date"
 											pattern="yyyy-MM-dd HH:mm" />] </span>
 								</div>
 							</c:when>
@@ -112,8 +112,8 @@
 								<div class="otherComment">
 									<span><font>
 											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userIp }</font>
-										&nbsp;&nbsp;&nbsp;&nbsp;${comment.content }&nbsp;&nbsp;&nbsp;&nbsp;
-										[<fmt:formatDate value="${comment.commentDate }" type="date"
+										&nbsp;&nbsp;&nbsp;&nbsp;${comment.content}&nbsp;&nbsp;&nbsp;&nbsp;
+										[<fmt:formatDate value="${comment.date}" type="date"
 											pattern="yyyy-MM-dd HH:mm" />] </span>
 								</div>
 							</c:otherwise>
