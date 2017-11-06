@@ -1,13 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-
-<script type="text/javascript"
-	src="${pageContext.request.contextPath}/static/ueditor1_4_3_3/third-party/SyntaxHighlighter/shCore.js"></script>
-<link rel="stylesheet"
-	href="${pageContext.request.contextPath}/static/ueditor1_4_3_3/third-party/SyntaxHighlighter/shCoreDefault.css">
 <script type="text/javascript">
-	SyntaxHighlighter.all(); //ueditor代码高亮
 
 	function showOtherComment() {
 		$(".otherComment").show();
@@ -27,7 +21,7 @@
 		} else {
 			$.post(
 				"${pageContext.request.contextPath}/comment/save.do",
-				{"content":content,"imageCode":imageCode,"blog.id":"${blog.id}"},
+				{"content":content,"imageCode":imageCode,"blogId":"${blog.id}"},
 				function(result) {
 					if(result.success) {
 						alert("评论已提交成功，博主审核后添加");
@@ -108,7 +102,7 @@
 							<c:when test="${status.index<10 }">
 								<div class="comment">
 									<span><font>
-											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userId }</font>
+											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userIp }</font>
 										&nbsp;&nbsp;&nbsp;&nbsp;${comment.content }&nbsp;&nbsp;&nbsp;&nbsp;
 										[<fmt:formatDate value="${comment.commentDate }" type="date"
 											pattern="yyyy-MM-dd HH:mm" />] </span>
@@ -117,7 +111,7 @@
 							<c:otherwise>
 								<div class="otherComment">
 									<span><font>
-											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userId }</font>
+											${status.index+1}楼&nbsp;&nbsp;&nbsp;&nbsp;${comment.userIp }</font>
 										&nbsp;&nbsp;&nbsp;&nbsp;${comment.content }&nbsp;&nbsp;&nbsp;&nbsp;
 										[<fmt:formatDate value="${comment.commentDate }" type="date"
 											pattern="yyyy-MM-dd HH:mm" />] </span>

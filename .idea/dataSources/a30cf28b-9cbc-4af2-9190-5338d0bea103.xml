@@ -151,7 +151,7 @@
     </column>
     <column id="37" parent="11" name="userIp">
       <Position>2</Position>
-      <DataType>varchar(10)|0</DataType>
+      <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="38" parent="11" name="content">
@@ -169,13 +169,13 @@
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="11" name="blog_id">
+    <column id="41" parent="11" name="blogId">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <index id="42" parent="11" name="blog_id">
-      <ColNames>blog_id</ColNames>
+      <ColNames>blogId</ColNames>
     </index>
     <key id="43" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -183,7 +183,7 @@
       <Primary>1</Primary>
     </key>
     <foreign-key id="44" parent="11" name="t_blog_id">
-      <ColNames>blog_id</ColNames>
+      <ColNames>blogId</ColNames>
       <RefSchemaName>blog</RefSchemaName>
       <RefTableName>t_blog</RefTableName>
       <RefColNames>id</RefColNames>

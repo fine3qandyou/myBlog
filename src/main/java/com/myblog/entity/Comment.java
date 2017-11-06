@@ -4,20 +4,12 @@ import java.util.Date;
 
 public class Comment {
     private Integer id;
-    private String userId;
+    private String userIp;
     private String content;
     private Date date;
     private Integer verifyState;
-    private Blog blog;
+    private Integer blogId;
 
-    public Comment(Integer id, String userId, String content, Date date, Integer verifyState, Blog blog) {
-        this.id = id;
-        this.userId = userId;
-        this.content = content;
-        this.date = date;
-        this.verifyState = verifyState;
-        this.blog = blog;
-    }
 
     public Comment() {
 
@@ -31,12 +23,12 @@ public class Comment {
         this.id = id;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getUserIp() {
+        return userIp;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUserIp(String userIp) {
+        this.userIp = userIp;
     }
 
     public String getContent() {
@@ -63,12 +55,24 @@ public class Comment {
         this.verifyState = verifyState;
     }
 
-    public Blog getBlog() {
-        return blog;
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "id=" + id +
+                ", userIp='" + userIp + '\'' +
+                ", content='" + content + '\'' +
+                ", date=" + date +
+                ", verifyState=" + verifyState +
+                ", blogId='" + blogId + '\'' +
+                '}';
     }
 
-    public void setBlog(Blog blog) {
-        this.blog = blog;
+    public Integer getBlogId() {
+        return blogId;
+    }
+
+    public void setBlogId(Integer blogId) {
+        this.blogId = blogId;
     }
 }
 

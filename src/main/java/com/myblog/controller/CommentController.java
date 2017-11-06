@@ -6,7 +6,6 @@ import com.myblog.entity.Comment;
 import com.myblog.service.BlogService;
 import com.myblog.service.CommentService;
 import com.myblog.util.ResponseUtil;
-import org.apache.shiro.session.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping(value = "/comment")
@@ -24,10 +24,13 @@ public class CommentController {
     @Resource
     private BlogService blogService;
 
-    public void save(Comment comment, @RequestParam(value = "imageCode")String imageCode,//验证码
-                       HttpServletRequest request,//获取评论者ip
-                       HttpServletResponse response, //响应
-                       Session session) throws Exception{
+    @RequestMapping(value = "/save")
+    public void save(@RequestParam(value = "content",required = false)String content,//内容
+                     @RequestParam(value = "imageCode",required = false)String imageCode,//验证码
+                     @RequestParam(value = "blogId",required = false)String blogId,//对应博客
+                     HttpServletRequest request,//获取评论者ip
+                     HttpServletResponse response, //响应
+                     HttpSession session) throws Exception{
 
         //获取session中正确的验证码，验证码产生后会存到session中的
         String sRand = (String) session.getAttribute("sRand");
@@ -38,11 +41,15 @@ public class CommentController {
             result.put("errorInfo","验证码有误");
         }else{
             //获取评论者ip
-            String userId = request.getRemoteAddr();
-            comment.setUserId(userId);
+            String userIp = request.getRemoteAddr();
+            //初始化设置comment，只需要三个参数
+            Comment comment = new Comment();
+            comment.setContent(content);
+            comment.setUserIp(userIp);
+            comment.setBlogId(Integer.parseInt(blogId));
             if(comment.getId() == null){
                 resultTotal = commentService.saveComment(comment); //添加评论
-                Blog blog = blogService.getById(comment.getBlog().getId()); //更新一下博客的评论次数
+                Blog blog = blogService.getById(Integer.parseInt(blogId)); //更新一下博客的评论次数
                 blog.setReplyHit(blog.getReplyHit() + 1);
                 blogService.updateBlog(blog);
             }else{

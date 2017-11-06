@@ -17,7 +17,7 @@
         SELECT * FROM blog.t_comment
         <where>
             <if test="blog_id!=null and blog_id != ''">
-                AND blog_id=#{blog_id}
+                AND blogId=#{blogId}
             </if>
             <if test="verifyState!= null and verifyState != ''">
                 AND verifyState=#{verifyState}
@@ -42,8 +42,8 @@
         SELECT * FROM blog.t_comment WHERE id=#{id}
     </select>
 
-    <insert id="saveComment">
-        INSERT INTO blog.t_comment VALUES (null,#{userIp},#{content},now(),0,#{blog_id})
+    <insert id="saveComment" parameterType="Comment">
+        INSERT INTO blog.t_comment VALUES (null,#{userIp},#{content},now(),0,#{blogId})
     </insert>
 
     <delete id="deleteComment">
@@ -61,11 +61,11 @@
     </update>
 
     <select id="queryByBlogId">
-        SELECT * FROM blog.t_comment WHERE blog_id=#{blog_id}
+        SELECT * FROM blog.t_comment WHERE blogId=#{blogId}
     </select>
 
     <delete id="deleteCommentByBlogId">
-        DELETE FROM blog.t_comment WHERE blog_id=#{blog_id}
+        DELETE FROM blog.t_comment WHERE blogId=#{blogId}
     </delete>
 
 

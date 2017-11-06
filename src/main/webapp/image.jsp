@@ -43,6 +43,8 @@ java.awt.image.*,java.util.*,javax.imageio.*"
 		g.drawString(rand, 13 * i + 6, 16);
 	}
 	// 将验证码存入SESSION
+//	Subject currentUser = SecurityUtils.getSubject();
+//	Session session = currentUser.getSession();
 	session.setAttribute("sRand", sRand);
 	g.dispose();
 	ImageIO.write(image, "JPEG", response.getOutputStream());
