@@ -62,6 +62,7 @@ public class BlogController {
         map.put("blogId", blog.getId());
         map.put("state", 1);
         List<Comment> commentList = commentService.getCommentData(map);
+        Collections.reverse(commentList);
         modelAndView.addObject("commentList",commentList);
 
         modelAndView.addObject("commonPage", "foreground/blog/blogDetail.jsp");
