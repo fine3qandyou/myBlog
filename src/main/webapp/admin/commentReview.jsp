@@ -12,11 +12,11 @@
     <%@include file="./common/head.jspf"%>
     <script>
 
-        function formatBlogTile(val,row) {
-            if(val.id == null){
+        function formatBlogTitle(val,row) {
+            if(val == null){
                 return "<font color=red>该博客已删除</font>";
             }else{
-                return "<a href='${blog}/blog/articles/"+val.id+".html' target='_blank'>"+val.title+"</a>";
+                return "<a href='${blog}/blog/articles/"+val+".html'/>";
             }
         }
         /**
@@ -69,7 +69,7 @@
         <th field="cb" checkbox="true" align="center"></th>
         <th field="id" align="center" width="20px">编号</th>
         <th field="userIp" align="center" width=100px">评论者ip</th>
-        <th field="blog" align="center" width="150px" formatter="formatBlogTile">博客标题</th>
+        <th field="blogId" align="center" width="150px" formatter="formatBlogTitle">博客ID</th>
         <th field="content" align="center" width="200px">评论内容</th>
         <th field="date" align="center" width="50px">评论日期</th>
     </tr>

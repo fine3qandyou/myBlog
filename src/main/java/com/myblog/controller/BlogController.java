@@ -62,7 +62,9 @@ public class BlogController {
         map.put("blogId", blog.getId());
         map.put("state", 1);
         List<Comment> commentList = commentService.getCommentData(map);
+        //把楼层对应评论翻转一下
         Collections.reverse(commentList);
+        //加到响应里去
         modelAndView.addObject("commentList",commentList);
 
         modelAndView.addObject("commonPage", "foreground/blog/blogDetail.jsp");

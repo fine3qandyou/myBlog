@@ -5,14 +5,6 @@
     <%@include file="./common/head.jspf"%>
     <script>
         /**
-         * 格式化博客标题
-         * @param val
-         * @param row
-         */
-        function formatBlogTile(val,row) {
-            return val.title;
-        }
-        /**
          * 格式化审核状态
          * @param val
          * @param row
@@ -75,7 +67,7 @@
         <th field="cb" checkbox="true" align="center"></th>
         <th field="id" align="center" width="20px">编号</th>
         <th field="userIp" align="center" width=100px">评论者ip</th>
-        <th field="blog" align="center" width="150px" formatter="formatBlogTile">博客标题</th>
+        <th field="blogId" align="center" width="150px">博客ID</th>
         <th field="content" align="center" width="200px">评论内容</th>
         <th field="date" align="center" width="50px">评论日期</th>
         <th field="verifyState" align="center" width="50px" formatter="formatState">审核状态</th>
