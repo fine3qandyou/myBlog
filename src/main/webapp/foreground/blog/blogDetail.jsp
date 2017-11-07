@@ -145,7 +145,6 @@
 		<div class="publishButton">
 			<button class="btn btn-primary" type="button" onclick="submitData()">发表评论</button>
 		</div>
-		</form>
 	</div>
 
 </div>

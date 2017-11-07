@@ -106,8 +106,8 @@ public class BlogController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/show")
-    public void show(HttpServletRequest request){
-        request.setAttribute("list",blogService.showAll());
-    }
+//    @RequestMapping(value = "/show")
+//    public void show(HttpServletRequest request){
+//        request.setAttribute("list",blogService.showAll());
+//    }
 }

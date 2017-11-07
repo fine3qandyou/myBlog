@@ -89,7 +89,7 @@ public class BlogIndex {
     }
 
     public List<Blog> searchBlog(String str) throws Exception{
-
+        if(str==null||str.length()==0)return null;
         //实例化索引目录
         directory = FSDirectory.open(Paths.get(indexDir));
 
