@@ -90,18 +90,24 @@ public class BlogController {
         if(page == null) { //page为空表示第一次搜索
             page = "1";
         }
-        int fromIndex = (Integer.parseInt(page) - 1) * pageSize; // 开始索引
-        int toIndex = blogIndexList.size() >= Integer.parseInt(page) * pageSize ? Integer
-                .parseInt(page) * pageSize
-                : blogIndexList.size();
-        modelAndView.addObject("blogIndexList", blogIndexList.subList(fromIndex, toIndex));
-        modelAndView.addObject("pageCode", PageUtil.getUpAndDownPageCode(
-                Integer.parseInt(page), blogIndexList.size(), data, pageSize,
-                request.getServletContext().getContextPath()));
+        if(blogIndexList!=null){
+            int fromIndex = (Integer.parseInt(page) - 1) * pageSize; // 开始索引
+            int toIndex = blogIndexList.size() >= Integer.parseInt(page) * pageSize ? Integer
+                    .parseInt(page) * pageSize
+                    : blogIndexList.size();
+            modelAndView.addObject("blogIndexList", blogIndexList.subList(fromIndex, toIndex));
+            modelAndView.addObject("pageCode", PageUtil.getUpAndDownPageCode(
+                    Integer.parseInt(page), blogIndexList.size(), data, pageSize,
+                    request.getServletContext().getContextPath()));
+            modelAndView.addObject("resultTotal", blogIndexList.size()); // 查询到的总记录数
+        }else{
+            modelAndView.addObject("blogIndexList", blogIndexList);
+            modelAndView.addObject("resultTotal", 0); // 查询到的总记录数
+        }
+
         modelAndView.addObject("data", data); // 用于数据的回显
-        modelAndView.addObject("resultTotal", blogIndexList.size()); // 查询到的总记录数
         modelAndView.addObject("commonPage", "foreground/blog/searchResult.jsp");
-        modelAndView.addObject("title", "搜索'" + data + "'的结果 - 熊平的博客");
+        modelAndView.addObject("title", "搜索'" + data + "'的结果 - 邱天的博客");
         modelAndView.setViewName("mainTemp");
         return modelAndView;
     }

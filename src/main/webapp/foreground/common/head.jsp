@@ -1,7 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
-
-
     <div class="col-md-4">
         <div class="blog">邱天的博客</div>
     </div>

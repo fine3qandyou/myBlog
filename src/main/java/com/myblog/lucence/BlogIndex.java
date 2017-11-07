@@ -89,6 +89,8 @@ public class BlogIndex {
     }
 
     public List<Blog> searchBlog(String str) throws Exception{
+        //去除前后空格后判断是否为空
+        str=str.trim();
         if(str==null||str.length()==0)return null;
         //实例化索引目录
         directory = FSDirectory.open(Paths.get(indexDir));
@@ -161,6 +163,7 @@ public class BlogIndex {
             }
             list.add(blog);
         }
+
         return list;
     }
 

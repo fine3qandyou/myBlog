@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <%@include file="head.jspf"%>
     <title>${title}</title>
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/grapefruit.png">
     <script type="text/javascript">
         function changeClass(obj) {
             var li = obj.parentNode; //获取父节点

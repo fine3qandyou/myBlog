@@ -7,7 +7,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <%@include file="./head.jspf"%>
-    <title>博客主页</title>
+    <title>博客首页</title>
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/grapefruit.png">
     <style type="text/css">
         body{
             padding-top:10px;
