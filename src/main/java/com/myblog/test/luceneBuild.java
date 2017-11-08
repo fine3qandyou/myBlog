@@ -11,6 +11,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring-beans.xml")
@@ -32,6 +34,20 @@ public class luceneBuild {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Test
+    public void highlightTest(){
+        try {
+            List<Blog> list = blogIndex.searchBlog("test");
+            for (Blog blog : list) {
+                System.out.println(blog.getTitle()+"   "+blog.getContent()+"     ");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 
 }

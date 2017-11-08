@@ -21,9 +21,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
 import java.nio.file.Paths;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
+//一步一步跟我学lucene（blog）不错
 @Component
 public class BlogIndex {
 
@@ -127,13 +127,21 @@ public class BlogIndex {
         Fragmenter fragmenter = new SimpleSpanFragmenter(queryScorer);
         SimpleHTMLFormatter formatter = new SimpleHTMLFormatter("<b><font color='red'>", "</font></b>");
 
-        //高亮显示
+        //高亮显示:formatter定义了高亮的显示方式，而scorer定义了高亮的评分
         Highlighter highlighter = new Highlighter(formatter,queryScorer);
         highlighter.setTextFragmenter(fragmenter);
 
+        //记录返回结果
         List<Blog> list = new LinkedList<>();
+        //过滤重复结果
+        Set<Integer> set = new HashSet<>();
+
         for(ScoreDoc scoreDoc : hits.scoreDocs){
             Document doc = indexSearcher.doc(scoreDoc.doc);
+            if (set.contains(Integer.parseInt(doc.get("id")))) {
+                continue;
+            }
+            set.add(Integer.parseInt(doc.get("id")));
             Blog blog = new Blog();
             blog.setId(Integer.parseInt(doc.get("id")));
             blog.setReleaseDateStr(doc.get("releaseDate"));
@@ -161,6 +169,7 @@ public class BlogIndex {
                     blog.setContent(hContent);
                 }
             }
+            System.out.println(blog.getTitle()+"  "+blog.getContent());
             list.add(blog);
         }
 

@@ -16,11 +16,13 @@
     </script>
     <style type="text/css">
         body{
-            padding-top:60px;
+            padding-top:20px;
             padding-bottom:40px;
             background-color: #F5F5F5;
             font-family: microsoft yahei;
-        }
+        }.container{
+             width: 1200px;
+         }
     </style>
 </head>
 

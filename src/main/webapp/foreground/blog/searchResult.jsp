@@ -18,7 +18,7 @@
 						  	<span class="title">
 						  		<img alt="文章类型" src="${pageContext.request.contextPath}/static/userImages/yuan.jpg">
 						  		<a href="${pageContext.request.contextPath}/blog/articles/${blog.id }.html" target="_blank">${blog.title }</a></span>
-						  	<span class="summary">摘要: ${blog.content }...</span>
+						  	<span class="summary">摘要: ${blog.content }...</span>&nbsp;&nbsp;&nbsp;&nbsp;
 						  	<span class="link"><a href="${pageContext.request.contextPath}/blog/articles/${blog.id }.html">${pageContext.request.contextPath}/blog/articles/${blog.id }.html</a>&nbsp;&nbsp;&nbsp;&nbsp;修改日期：${blog.releaseDateStr }</span>
 						 </li>						
 					</c:forEach>

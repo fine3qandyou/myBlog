@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/grapefruit.png">
     <style type="text/css">
         body{
-            padding-top:10px;
+            padding-top:20px;
             padding-bottom:40px;
             background-color: #F8F8FF;
             font-family: microsoft yahei;
