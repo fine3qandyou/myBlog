@@ -24,7 +24,7 @@
 				{"content":content,"imageCode":imageCode,"blogId":"${blog.id}"},
 				function(result) {
 					if(result.success) {
-						alert("评论已提交成功，博主审核后添加");
+						alert("评论提交成功！");
 						window.location.reload();
 					} else {
 						alert(result.errorInfo);

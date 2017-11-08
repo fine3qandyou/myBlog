@@ -26,9 +26,9 @@ public class BloggerController {
     public String login(Blogger blogger, HttpServletRequest request) {
         //获取登录实体
         Subject subject = SecurityUtils.getSubject();
-        //String password = MD5Util.md5(blogger.getPassword(),"lalala");
+        String password = MD5Util.md5(blogger.getPassword(),"lalala");
         //获取用户密码登录token
-        UsernamePasswordToken token = new UsernamePasswordToken(blogger.getUserName(), blogger.getPassword());
+        UsernamePasswordToken token = new UsernamePasswordToken(blogger.getUserName(), password);
         try {
             //根据token登录 会调用MyRealm中的doGetAuthenticationInfo方法进行身份认证
             subject.login(token);

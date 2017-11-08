@@ -47,7 +47,7 @@
 
             if (title == null || title == '') {
                 $.messager.alert("系统提示", "请输入标题！");
-            } else if (blogTypeId == null || blogTypeId == '') {
+            } else if (blogTypeId == '请选择博客类型...') {
                 $.messager.alert("系统提示", "请选择博客类型！");
             } else if (content == null || content == '') {
                 $.messager.alert("系统提示", "请编辑博客内容！");

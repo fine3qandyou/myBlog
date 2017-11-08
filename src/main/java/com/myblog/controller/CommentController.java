@@ -54,7 +54,7 @@ public class CommentController {
                 blogService.updateBlog(blog);
             }else{
                 result.put("success",false);
-                result.put("errorInfo","验证码有误");
+                result.put("errorInfo","验证码有误！");
             }
         }
         if(resultTotal > 0) {

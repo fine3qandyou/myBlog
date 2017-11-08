@@ -23,4 +23,6 @@ public interface BloggerDao {
      */
     Integer updateBlogger(Blogger blogger);
 
+    Blogger getBloggerById(Integer id);
+
 }

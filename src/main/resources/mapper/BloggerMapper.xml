@@ -27,6 +27,11 @@
         username=#{username}
     </select>
 
+    <select id="getBloggerById" resultMap="BloggerResult" parameterType="Integer">
+        SELECT <include refid="BloggerColumns"/> FROM blog.t_blogger WHERE
+        id=#{id}
+    </select>
+
     <update id="updateBlogger" parameterType="Blogger">
         UPDATE blog.t_blogger
         <set>
@@ -43,7 +48,7 @@
                 profile=#{profile},
             </if>
             <if test="imageName!=null and imageName!=''">
-                imagename=#{imagename},
+                imagename=#{imageName},
             </if>
         </set>
         WHERE id=1

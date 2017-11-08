@@ -49,7 +49,7 @@
             <tr>
                 <td>用户名：</td>
                 <td>
-                    <input type="text" id="username" name="username" style="width:200px" readonly="readonly"/>
+                    ${blogger.userName}
                 </td>
             </tr>
             <tr>

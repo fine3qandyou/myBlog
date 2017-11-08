@@ -27,4 +27,6 @@ public class BloggerServiceImpl implements BloggerService {
      * @return
      */
     public Integer updateBlogger(Blogger blogger){return bloggerDao.updateBlogger(blogger);}
+
+    public Blogger getBloggerById(Integer id){return bloggerDao.getBloggerById(id);}
 }
