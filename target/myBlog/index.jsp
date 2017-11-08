@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/grapefruit.png">
     <style type="text/css">
         body{
-            padding-top:10px;
+            padding-top:20px;
             padding-bottom:40px;
             background-color: #F8F8FF;
             font-family: microsoft yahei;
@@ -54,7 +54,7 @@
                 <div class="datas">
                     <ul>
                         <c:forEach items="${blogTypeList}" var="blogType">
-                            <li><span><a href="#">${blogType.typeName}(${blogType.blogCount})</a></span></li>
+                            <li><span><a href=${pageContext.request.contextPath}/index.html?typeId=${blogType.id }">${blogType.typeName}(${blogType.blogCount})</a></span></li>
                         </c:forEach>
                     </ul>
                 </div>

@@ -3,6 +3,8 @@ package com.myblog.controller;
 import com.myblog.entity.Blog;
 import com.myblog.entity.PageBean;
 import com.myblog.service.BlogService;
+import com.myblog.util.PageUtil;
+import com.myblog.util.StringUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -45,6 +47,27 @@ public class IndexController {
 
         // 获取博客信息
         List<Blog> blogList = blogService.listBlog(map);
+
+        // 分页
+        StringBuffer param = new StringBuffer();
+        //拼接参数，主要对于点击文章分类或者日期分类后，查出来的分页，要拼接具体的参数
+        if(StringUtil.isNotEmpty(typeId)) {
+            param.append("typeId=" + typeId + "&");
+        }
+        if(StringUtil.isNotEmpty(releaseDateStr)) {
+            param.append("releaseDateStr=" + releaseDateStr + "&");
+        }
+
+        modelAndView.addObject("pageCode", PageUtil.genPagination( //调用代码生成的工具类生成前台显示
+                request.getContextPath() + "/index.html", //还是请求该controller的index方法
+                blogService.getTotal(map),
+                Integer.parseInt(page), 10,
+                param.toString()));
+
+        modelAndView.addObject("blogList", blogList);
+        modelAndView.addObject("commonPage", "foreground/blog/blogList.jsp");
+        modelAndView.addObject("title", "博客主页 - 邱天的博客");
+        modelAndView.setViewName("mainTemp");
 
         return modelAndView;
     }
