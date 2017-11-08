@@ -30,17 +30,17 @@
 </div>
 
 <div class="data_list">
-    <%--<div class="data_list_title">--%>
-        <%--<img--%>
-                <%--src="${pageContext.request.contextPath}/static/images/byDate_icon.png" />--%>
-        <%--文章存档--%>
-    <%--</div>--%>
+    <div class="data_list_title">
+        <img
+                src="${pageContext.request.contextPath}/static/images/byDate_icon.png" />
+        随便看看
+    </div>
     <div class="datas">
         <ul>
-            <c:forEach items="${blogTimeList }" var="blog">
+            <c:forEach items="${blogRandomList }" var="blog">
                 <li><span> <a
-                        href="${pageContext.request.contextPath}/index.html?releaseDateStr=${blog.releaseDateStr }">${blog.releaseDateStr }（${blog.blogCount }）
-					</a></span></li>
+                        href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html">${blog.title }</a>
+					</span></li>
             </c:forEach>
         </ul>
     </div>
@@ -56,12 +56,12 @@
         <ul>
             <div style="text-align:left;padding-top:20px;">
                 <div class="bdsharebuttonbox">
-                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
-                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-                    <a href="#" class="bds_more" data-cmd="more"></a>
+                    <a href="${pageContext.request.contextPath}/index.do" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    <a href="${pageContext.request.contextPath}/index.do" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="${pageContext.request.contextPath}/index.do" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="${pageContext.request.contextPath}/index.do" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+                    <a href="${pageContext.request.contextPath}/index.do" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                    <a href="${pageContext.request.contextPath}/index.do" class="bds_more" data-cmd="more"></a>
                 </div>
             </div>
         </ul>

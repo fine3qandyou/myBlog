@@ -18,7 +18,7 @@
         body{
             padding-top:20px;
             padding-bottom:20px;
-            background-color: #F5F5F5;
+            background-color: #F8F8FF;
             font-family: microsoft yahei;
         }.container{
              width: 1200px;
