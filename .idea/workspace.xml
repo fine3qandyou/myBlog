@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/index.jsp" afterPath="$PROJECT_DIR$/target/myBlog/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/mainTemp.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/mainTemp.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -116,8 +117,8 @@
       <file leaf-file-name="BlogController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="85" column="75" lean-forward="false" selection-start-line="85" selection-start-column="75" selection-end-line="85" selection-end-column="75" />
+            <state relative-caret-position="354">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#details#0;class#BlogController#0" expanded="false" />
@@ -128,20 +129,40 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainTemp.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/mainTemp.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="-246">
+              <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1414#1430#0" expanded="true" />
+                <element signature="e#1405#1421#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rightList.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rightList.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/foreground/blog/rightList.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
@@ -151,11 +172,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+            <state relative-caret-position="168">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -183,8 +204,8 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -236,7 +257,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/myblog/entity/Blogger.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/BloggerMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/modifyBlog.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/BloggerAdminController.java" />
@@ -280,13 +300,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/foreground/common/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/foreground/common/head.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/mainTemp.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/foreground/blog/searchResult.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/test/luceneBuild.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/util/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/lucence/BlogIndex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/mainTemp.jsp" />
       </list>
     </option>
   </component>
@@ -1782,7 +1803,7 @@
       <workItem from="1507773240451" duration="170838000" />
       <workItem from="1508808797203" duration="53454000" />
       <workItem from="1509344796900" duration="15466000" />
-      <workItem from="1509447712318" duration="131184000" />
+      <workItem from="1509447712318" duration="132988000" />
     </task>
     <task id="LOCAL-00001" summary="添加了Blogger对应的dao和mapper文件">
       <created>1508501898407</created>
@@ -2113,7 +2134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510124313442</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="完成文章分类问题，下一步解决首页问题">
+      <created>1510127814203</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1510127814203</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2149,7 +2177,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443686000" />
+    <option name="totallyTimeSpent" value="445490000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2232,7 +2260,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加了测试用index，规划了前进方向" />
     <MESSAGE value="改了一大堆，懒得记了，下次调整前台部分" />
     <MESSAGE value="扒了很多前端代码，慢慢消化" />
     <MESSAGE value="提高语言级别，完成lucence部分，前端部分尚未完成" />
@@ -2257,11 +2284,12 @@
     <MESSAGE value="初步完成搜索功能，继续改bug" />
     <MESSAGE value="添加了网页图标，更改了搜索为空时的bug，下一步完成标黄" />
     <MESSAGE value="完成搜索标红，解决重复问题，下一步完成文章分类和首页问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成搜索标红，解决重复问题，下一步完成文章分类和首页问题" />
+    <MESSAGE value="完成文章分类问题，下一步解决首页问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成文章分类问题，下一步解决首页问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2270,14 +2298,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/util/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/util/VerifyCodeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -2610,14 +2630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/mainTemp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="60" column="25" lean-forward="true" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/test/luceneBuild.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
@@ -2650,38 +2662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="85" column="75" lean-forward="false" selection-start-line="85" selection-start-column="75" selection-end-line="85" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#details#0;class#BlogController#0" expanded="false" />
-            <element signature="e#1956#1972#0" expanded="true" />
-            <element signature="method#search#0;class#BlogController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1414#1430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/foreground/blog/rightList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/webContexts.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2698,10 +2678,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#details#0;class#BlogController#0" expanded="false" />
+            <element signature="e#1956#1972#0" expanded="true" />
+            <element signature="method#search#0;class#BlogController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-246">
+          <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1405#1421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        <state relative-caret-position="168">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mainTemp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="44" column="50" lean-forward="false" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/foreground/blog/rightList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding />
         </state>
       </provider>

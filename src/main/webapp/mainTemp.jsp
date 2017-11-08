@@ -17,7 +17,7 @@
     <style type="text/css">
         body{
             padding-top:20px;
-            padding-bottom:40px;
+            padding-bottom:20px;
             background-color: #F5F5F5;
             font-family: microsoft yahei;
         }.container{

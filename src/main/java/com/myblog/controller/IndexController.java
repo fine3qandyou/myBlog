@@ -17,7 +17,6 @@ import java.util.Map;
 import java.util.HashMap;
 
 
-//用于主页跳转
 @Controller
 public class IndexController {
 
