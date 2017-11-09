@@ -6,6 +6,7 @@ import com.myblog.entity.Blogger;
 import com.myblog.service.BlogService;
 import com.myblog.service.BlogTypeService;
 import com.myblog.service.BloggerService;
+import com.myblog.util.RandomUtil;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -13,8 +14,10 @@ import org.springframework.stereotype.Component;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 
 @Component
 public class InitBloggerData implements ServletContextListener, ApplicationContextAware {
@@ -41,6 +44,9 @@ public class InitBloggerData implements ServletContextListener, ApplicationConte
         //获取博客信息
         List<Blog> blogList = blogService.listBlog(new HashMap());
         application.setAttribute("blogList",blogList);
+        //做一个随机出来的list
+        List<Blog> blogRandomList = RandomUtil.randomList(blogList);
+        application.setAttribute("blogRandomList",blogRandomList);
     }
 
     public void contextDestroyed(ServletContextEvent sce) {

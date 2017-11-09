@@ -25,6 +25,20 @@
                 })
             }
         }
+        function logout() {
+            var s = confirm("确认退出当前用户？");
+            if(s){
+                $.post(
+                    "${blog}/admin/blogger/logout.do",
+                    function (result) {
+                        json = JSON.parse(result);
+                        if(json.success){
+                            alert("退出成功！");
+                            window.location.href="${blog}/login.jsp";
+                        }
+                    })
+            }
+        }
     </script>
 </head>
 

@@ -4,6 +4,7 @@ import com.myblog.entity.Blog;
 import com.myblog.entity.PageBean;
 import com.myblog.service.BlogService;
 import com.myblog.util.PageUtil;
+import com.myblog.util.RandomUtil;
 import com.myblog.util.StringUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,23 +43,10 @@ public class IndexController {
 
         // 获取博客信息
         List<Blog> blogList = blogService.listBlog(map);
+
         //做一个随机出来的list
-        List<Blog> blogRandomList = new ArrayList<>();
-        Random random = new Random();
-        //用来产生不重复随机数
-        List<Integer> randomList = new ArrayList<>();
-        for (int i = 0; i < blogList.size(); i++){
-            randomList.add(i);
-        }
-        if (blogList.size() < 5) {
-            blogRandomList = blogList;
-        }else {
-            for (int i = 0; i < 5; i++){
-                int a = random.nextInt(randomList.size());
-                randomList.remove(a);
-                blogRandomList.add(blogList.get(a));
-            }
-        }
+        List<Blog> list = blogService.listBlog(new HashMap<>());
+        List<Blog> blogRandomList = RandomUtil.randomList(list);
 
 //        // 分页
 //        StringBuffer param = new StringBuffer();
