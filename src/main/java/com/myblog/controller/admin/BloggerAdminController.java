@@ -6,10 +6,13 @@ import com.myblog.service.BloggerService;
 import com.myblog.util.DateUtil;
 import com.myblog.util.MD5Util;
 import com.myblog.util.ResponseUtil;
-import com.sun.javafx.scene.shape.PathUtils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -70,7 +73,11 @@ public class BloggerAdminController {
     }
 
     @RequestMapping(value = "/logout")
-    public void logout(Blogger blogger, HttpServletResponse response) throws Exception{
-        //TODO:登出系统
+    public void logout(HttpServletResponse response) throws Exception{
+        Subject currentUser = SecurityUtils.getSubject();
+        currentUser.logout();
+        JSONObject result = new JSONObject();
+        result.put("success",true);
+        ResponseUtil.write(response,result);
     }
 }
