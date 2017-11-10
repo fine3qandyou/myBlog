@@ -4,8 +4,10 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.myblog.entity.Blog;
 import com.myblog.entity.Comment;
 import com.myblog.entity.PageBean;
+import com.myblog.service.BlogService;
 import com.myblog.service.CommentService;
 import com.myblog.util.ResponseUtil;
 import org.springframework.stereotype.Controller;
@@ -21,6 +23,9 @@ public class CommentAdminController {
 
     @Resource
     private CommentService commentService;
+
+    @Resource
+    private BlogService blogService;
 
     @RequestMapping(value = "/list")
     public void listByPage(@RequestParam(value = "page" ,required = false) String page,
@@ -51,7 +56,12 @@ public class CommentAdminController {
     public void deleteComment(@RequestParam(value = "ids",required = false)String ids,HttpServletResponse response){
         String[] id = ids.split(",");
         for(int i=0;i<id.length;i++){
-            commentService.deleteComment(Integer.parseInt(id[i]));
+            int commentId = Integer.parseInt(id[i]);
+            Comment comment = commentService.getById(commentId);
+            Blog blog = blogService.getById(comment.getBlogId());
+            blog.setReplyHit(blog.getReplyHit()-1);
+            blogService.updateBlog(blog);
+            commentService.deleteComment(commentId);
         }
         JSONObject result = new JSONObject();
         result.put("success",true);

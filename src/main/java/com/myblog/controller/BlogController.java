@@ -60,7 +60,6 @@ public class BlogController {
         // 查询评论信息
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("blogId", blog.getId());
-        map.put("state", 1);
         List<Comment> commentList = commentService.getCommentData(map);
         //把楼层对应评论翻转一下
         Collections.reverse(commentList);

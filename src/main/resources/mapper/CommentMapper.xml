@@ -16,7 +16,7 @@
     <select id="listByPage" resultMap="commentResult" parameterType="Map">
         SELECT * FROM blog.t_comment
         <where>
-            <if test="blog_id!=null and blog_id != ''">
+            <if test="blogId!=null and blogId != ''">
                 AND blogId=#{blogId}
             </if>
             <if test="verifyState!= null and verifyState != ''">

@@ -62,7 +62,7 @@
                 //确定删除
                 if(r) {
                     //发送ajax请求
-                    $.post("${blog}/admin/blog/delete.do",
+                    $.post("${blog}/admin/blog/deleteBlog.do",
                         {ids: ids}, function(result){
                             if(result.success) {
                                 $.messager.alert("系统提示", "数据删除成功！");

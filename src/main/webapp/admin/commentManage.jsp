@@ -38,8 +38,8 @@
                 $.messager.confirm('系统信息',"<font color=red>您确定要删除选中的"+selectRows.length+"条数据么？</font>",function(r){
                     if(r){
                         $.post('${blog}/admin/comment/delete.do',{ids:ids},function (result) {
-                            var result = JSON.parse(result);
-                            if(result.success){
+                            var json = JSON.parse(result);
+                            if(json.success){
                                 $.messager.alert('系统信息','删除评论成功');
                                 $('#dg').datagrid('reload');
                             }else{
