@@ -1,8 +1,10 @@
 package com.myblog.controller;
 
 import com.myblog.entity.Blog;
+import com.myblog.entity.BlogType;
 import com.myblog.entity.PageBean;
 import com.myblog.service.BlogService;
+import com.myblog.service.BlogTypeService;
 import com.myblog.util.PageUtil;
 import com.myblog.util.RandomUtil;
 import com.myblog.util.StringUtil;
@@ -21,7 +23,8 @@ public class IndexController {
 
     @Resource
     private BlogService blogService;
-
+    @Resource
+    private BlogTypeService blogTypeService;
     @RequestMapping("/index")
     public ModelAndView index(@RequestParam(value = "page", required = false) String page,
                               @RequestParam(value = "typeId", required = false) String typeId,
@@ -48,6 +51,8 @@ public class IndexController {
         List<Blog> list = blogService.listBlog(new HashMap<>());
         List<Blog> blogRandomList = RandomUtil.randomList(list);
 
+        //获取博客类型信息
+        List<BlogType> blogTypeList = blogTypeService.getBlogTypeData();
 //        // 分页
 //        StringBuffer param = new StringBuffer();
 //        //拼接参数，主要对于点击文章分类或者日期分类后，查出来的分页，要拼接具体的参数
@@ -61,7 +66,7 @@ public class IndexController {
                 Integer.parseInt(page), 10,
                 typeId));
 
-
+        modelAndView.addObject("blogTypeList", blogTypeList);
         modelAndView.addObject("blogRandomList", blogRandomList);
         modelAndView.addObject("blogList", blogList);
         modelAndView.addObject("commonPage", "foreground/blog/blogList.jsp");

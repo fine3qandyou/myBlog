@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.myblog.entity.BlogType;
 import com.myblog.entity.PageBean;
+import com.myblog.service.BlogService;
 import com.myblog.service.BlogTypeService;
 import com.myblog.util.ResponseUtil;
 import org.springframework.stereotype.Controller;
@@ -16,7 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 @RequestMapping(value = "/admin/blogType")
 public class BlogTypeAdminController {
-
+    @Resource
+    private BlogService blogService;
     @Resource
     private BlogTypeService blogTypeService;
 
@@ -71,8 +73,12 @@ public class BlogTypeAdminController {
         JSONObject result = new JSONObject();
         for (int i = 0; i < idsStr.length; i++) {
             int id = Integer.parseInt(idsStr[i]);
-            //其实在这里我们要判断该博客类别下面是否有博客 如果有就禁止删除博客类别 ，等我们完成博客对应的操作再来完善
-            blogTypeService.deleteBlogType(id);
+            if(blogService.getBlogByTypeId(id) > 0) { //说明该类别中有博客
+                result.put("exist", "true");
+                break;
+            } else {
+                blogTypeService.deleteBlogType(id);
+            }
         }
         result.put("success", true);
         ResponseUtil.write(response, result);

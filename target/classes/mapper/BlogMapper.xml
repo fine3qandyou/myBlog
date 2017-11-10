@@ -50,8 +50,8 @@
         </where>
     </select>
 
-    <select id="getBlogTypeId" parameterType="Integer" resultType="Integer">
-        SELECT count(*) FROM blog.t_blog WHERE type_id=#{typeid}
+    <select id="getBlogByTypeId" parameterType="Integer" resultType="Integer">
+        SELECT count(*) FROM blog.t_blog WHERE type_id=#{type_id}
     </select>
 
     <insert id="saveBlog" parameterType="Blog" keyProperty="id" useGeneratedKeys="true">

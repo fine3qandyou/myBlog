@@ -2,9 +2,11 @@ package com.myblog.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.myblog.entity.Blog;
+import com.myblog.entity.BlogType;
 import com.myblog.entity.Comment;
 import com.myblog.lucence.BlogIndex;
 import com.myblog.service.BlogService;
+import com.myblog.service.BlogTypeService;
 import com.myblog.service.CommentService;
 import com.myblog.util.PageUtil;
 import com.myblog.util.ResponseUtil;
@@ -33,6 +35,9 @@ public class BlogController {
     @Resource
     private BlogIndex blogIndex;
 
+    @Resource
+    private BlogTypeService blogTypeService;
+
     @RequestMapping(value = "/articles/{id}")
     public ModelAndView details(@PathVariable(value = "id")String id, HttpServletRequest request){
 
@@ -56,7 +61,8 @@ public class BlogController {
         //访问量+1
         blog.setClickHit(blog.getClickHit()+1);
         blogService.updateBlog(blog);
-
+        //获取博客类型信息
+        List<BlogType> blogTypeList = blogTypeService.getBlogTypeData();
         // 查询评论信息
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("blogId", blog.getId());
@@ -65,7 +71,7 @@ public class BlogController {
         Collections.reverse(commentList);
         //加到响应里去
         modelAndView.addObject("commentList",commentList);
-
+        modelAndView.addObject("blogTypeList", blogTypeList);
         modelAndView.addObject("commonPage", "foreground/blog/blogDetail.jsp");
         modelAndView.addObject("title", blog.getTitle() + " - 邱天的博客");
 
@@ -103,7 +109,9 @@ public class BlogController {
             modelAndView.addObject("blogIndexList", blogIndexList);
             modelAndView.addObject("resultTotal", 0); // 查询到的总记录数
         }
-
+        //获取博客类型信息
+        List<BlogType> blogTypeList = blogTypeService.getBlogTypeData();
+        modelAndView.addObject("blogTypeList", blogTypeList);
         modelAndView.addObject("data", data); // 用于数据的回显
         modelAndView.addObject("commonPage", "foreground/blog/searchResult.jsp");
         modelAndView.addObject("title", "搜索'" + data + "'的结果 - 邱天的博客");

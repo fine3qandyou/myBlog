@@ -61,8 +61,10 @@
             <div title="常用操作" data-options="selected:true,iconCls:'icon-item'" style="padding: 10px">
                 <a href="javascript:openTab('写博客','writeBlog.jsp','icon-writeblog')" class="easyui-linkbutton"
                    data-options="plain:true,iconCls:'icon-writeblog'" style="width: 150px">写博客</a>
-                <a href="javascript:openTab('评论审核','commentReview.jsp','icon-review')" class="easyui-linkbutton"
-                   data-options="plain:true,iconCls:'icon-review'" style="width: 150px">评论审核</a>
+                <a href="javascript:openTab('博客信息管理','BlogManage.jsp','icon-bkgl')" class="easyui-linkbutton"
+                   data-options="plain:true,iconCls:'icon-bkgl'" style="width: 150px;">博客信息管理</a>
+                <a href="javascript:openTab('评论信息管理','commentManage.jsp','icon-plgl')" class="easyui-linkbutton"
+                   data-options="plain:true,iconCls:'icon-plgl'" style="width: 150px;">评论信息管理</a>
                 <a href="javascript:openTab('修改个人信息','modifyInfo.jsp','icon-grxxxg')" class="easyui-linkbutton"
                    data-options="plain:true,iconCls:'icon-grxxxg'" style="width: 150px;">修改个人信息</a>
             </div>
