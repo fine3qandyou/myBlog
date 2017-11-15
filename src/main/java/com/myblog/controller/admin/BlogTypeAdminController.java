@@ -18,8 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping(value = "/admin/blogType")
 public class BlogTypeAdminController {
     @Resource
-    private BlogService blogService;
-    @Resource
     private BlogTypeService blogTypeService;
 
     @RequestMapping(value = "/list")
@@ -73,12 +71,7 @@ public class BlogTypeAdminController {
         JSONObject result = new JSONObject();
         for (int i = 0; i < idsStr.length; i++) {
             int id = Integer.parseInt(idsStr[i]);
-            if(blogService.getBlogByTypeId(id) > 0) { //说明该类别中有博客
-                result.put("exist", "true");
-                break;
-            } else {
-                blogTypeService.deleteBlogType(id);
-            }
+            blogTypeService.deleteBlogType(id);
         }
         result.put("success", true);
         ResponseUtil.write(response, result);
