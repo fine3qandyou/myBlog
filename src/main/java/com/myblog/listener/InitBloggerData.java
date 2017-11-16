@@ -39,7 +39,9 @@ public class InitBloggerData implements ServletContextListener, ApplicationConte
         //获取博主信息
         Blogger blogger = bloggerService.getBloggerData();
         //隐藏密码
-        blogger.setPassword(null);
+        if(blogger != null){
+            blogger.setPassword(null);
+        }
         application.setAttribute("blogger",blogger);
         //获取博客信息
         List<Blog> blogList = blogService.listBlog(new HashMap());

@@ -19,7 +19,7 @@
     </sql>
 
     <select id="getBloggerData" resultMap="BloggerResult" >
-        select <include refid="BloggerColumns"/>  from t_blogger where id = 1
+        select <include refid="BloggerColumns"/>  from t_blogger
     </select>
 
     <select id="getBloggerByName" resultMap="BloggerResult" parameterType="String">
