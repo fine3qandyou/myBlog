@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
+    <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="一顿乱改还是没有解决ueditor的问题，前端水平真的不行啊">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/util/PageUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/util/PageUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/myblog/util/RandomUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/myblog/util/RandomUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/config.json" afterPath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/config.json" afterPath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/themes/iframe.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/themes/iframe.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.config.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/dialogs/preview/preview.html" afterPath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/dialogs/preview/preview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/jsp/config.json" afterPath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/jsp/config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/themes/iframe.css" afterPath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/themes/iframe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/ueditor.all.js" afterPath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/ueditor.all.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/ueditor.config.js" afterPath="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/ueditor.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,6 +54,64 @@
         <option name="myItemId" value="blog" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_comment" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="blog@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="blog" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_blogtype" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="blog@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="blog" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_blogger" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="blog@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="blog" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_blog" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -58,32 +120,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mainTemp.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/mainTemp.jsp">
+      <file leaf-file-name="ueditor.all.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/util/PageUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="46" column="67" lean-forward="true" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
-              <folding />
+            <state relative-caret-position="223">
+              <caret line="28343" column="80" lean-forward="false" selection-start-line="28343" selection-start-column="80" selection-end-line="28343" selection-end-column="80" />
+              <folding>
+                <marker date="1510907899978" expanded="true" signature="354708:354721" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="359251:359268" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="364589:364607" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="458484:458510" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="604823:604953" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="825665:825760" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="862511:862587" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="874746:874764" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="874811:874853" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="874938:874968" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="893354:893426" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="903317:903343" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="903539:903630" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="903887:903962" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="904149:904164" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="904384:904436" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="916358:916447" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="980656:980728" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="999738:999750" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="1001982:1002006" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="1027075:1027081" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1027081:1027087" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1027191:1027197" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1027197:1027203" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1027307:1027313" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1027313:1027319" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1029488:1029494" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1029494:1029500" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1030467:1030473" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1030473:1030479" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1030619:1030625" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1030625:1030631" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1030773:1030779" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1030779:1030785" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1030929:1030935" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1030935:1030941" ph="&amp;nbsp;" />
+                <marker date="1510907899978" expanded="true" signature="1031751:1031762" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="1035699:1035712" ph="..." />
+                <marker date="1510907899978" expanded="true" signature="1036089:1036125" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,10 +189,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Id</find>
-      <find>userId</find>
-      <find>comment</find>
-      <find>content</find>
       <find>blog.id</find>
       <find>sess</find>
       <find>Session</find>
@@ -137,6 +215,10 @@
       <find>d.setre</find>
       <find>.view</find>
       <find>.v</find>
+      <find>图片</find>
+      <find>config</find>
+      <find>render:func</find>
+      <find>'body{margin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,11 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/image.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/commentReview.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/foreground/common/menu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/foreground/common/head.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/foreground/blog/searchResult.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/test/luceneBuild.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/util/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/lucence/BlogIndex.java" />
@@ -199,11 +276,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/listener/InitBloggerData.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/BloggerMapper.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/themes/iframe.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.config.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/util/PageUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/util/RandomUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.config.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/dialogs/preview/preview.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/config.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/config.json" />
+        <option value="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/jsp/config.json" />
+        <option value="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/config.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/themes/iframe.css" />
       </list>
     </option>
   </component>
@@ -336,11 +418,237 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueditor1.4.3.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueditor1.4.3.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ueditor1.4.3.3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foreground" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foreground" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1330,14 +1638,7 @@
       <workItem from="1509447712318" duration="147905000" />
       <workItem from="1510195479705" duration="50650000" />
       <workItem from="1510800563330" duration="3914000" />
-      <workItem from="1510813032813" duration="17891000" />
-    </task>
-    <task id="LOCAL-00010" summary="更新了评论功能的MV层">
-      <created>1508683639621</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1508683639621</updated>
+      <workItem from="1510813032813" duration="23085000" />
     </task>
     <task id="LOCAL-00011" summary="准备完成C层">
       <created>1508684325675</created>
@@ -1675,7 +1976,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510886302979</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="修复博客为5时的bug，继续修复ueditor图片问题">
+      <created>1510904505914</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1510904505914</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1711,7 +2019,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="532862000" />
+    <option name="totallyTimeSpent" value="538056000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1733,7 +2041,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2260579" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.072383076" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972437" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972437" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1794,9 +2102,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成listener，将基本信息保存到application" />
-    <MESSAGE value="完成后台登录界面" />
-    <MESSAGE value="完成主界面" />
     <MESSAGE value="完成登录部分，下一步改进实时更新部分" />
     <MESSAGE value="未解决更新问题，准备先解决评论问题" />
     <MESSAGE value="添加了comment实现，未完成，首页问题可以用重定向结局" />
@@ -1819,7 +2124,10 @@
     <MESSAGE value="导入数据库，下一步解决UEditor的bug" />
     <MESSAGE value="修复blogger的问题，还未解决uEditor的bug" />
     <MESSAGE value="修复了上传图片的问题，下一步解决图片大小问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复了上传图片的问题，下一步解决图片大小问题" />
+    <MESSAGE value="修复博客为5时的bug，继续修复ueditor图片问题" />
+    <MESSAGE value="图片问题没做好，写的时候手动调整一下" />
+    <MESSAGE value="一顿乱改还是没有解决ueditor的问题，前端水平真的不行啊" />
+    <option name="LAST_COMMIT_MESSAGE" value="一顿乱改还是没有解决ueditor的问题，前端水平真的不行啊" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1832,64 +2140,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/BloggerAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="71" column="80" lean-forward="false" selection-start-line="71" selection-start-column="80" selection-end-line="71" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/BlogAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="79" column="78" lean-forward="true" selection-start-line="79" selection-start-column="78" selection-end-line="79" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/service/BlogTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/service/Impl/BlogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/dao/BlogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding>
-            <marker date="1510292940852" expanded="true" signature="2077:2134" ph="SELECT count... t_blog" />
-            <marker date="1510292940852" expanded="true" signature="2247:2351" ph="INSERT INTO blog.t_blog... " />
-            <marker date="1510292940852" expanded="true" signature="2425:3209" ph="UPDATE blog.... " />
-            <marker date="1510292940852" expanded="true" signature="3286:3324" ph="DELETE FROM " />
-            <marker date="1510292940852" expanded="true" signature="3421:3456" ph="SELECT * fro... t_blog" />
-            <marker date="1510292940852" expanded="true" signature="3557:3625" ph="SELECT * FRO... t_blog" />
-            <marker date="1510292940852" expanded="true" signature="3726:3791" ph="SELECT * FRO... t_blog" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BlogTypeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="744">
@@ -2106,14 +2356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/controller.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myBlog.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="852">
@@ -2122,26 +2364,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/lib/json.jar!/org/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -2194,32 +2420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="7" column="20031" lean-forward="false" selection-start-line="7" selection-start-column="20031" selection-end-line="7" selection-end-column="20031" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/themes/iframe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="85" column="10" lean-forward="false" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMTraversalAndRange.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -2228,66 +2428,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="4326" column="38" lean-forward="true" selection-start-line="4326" selection-start-column="38" selection-end-line="4326" selection-end-column="38" />
-          <folding>
-            <marker date="1510902945729" expanded="true" signature="354626:354639" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="359169:359186" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="364507:364525" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="458402:458428" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="604741:604871" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="825583:825678" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="862429:862505" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="874664:874682" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="874729:874771" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="874856:874886" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="893272:893344" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="903235:903261" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="903457:903548" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="903805:903880" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="904067:904082" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="904302:904354" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="916276:916365" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="980574:980646" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="999656:999668" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="1001900:1001924" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="1026993:1026999" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1026999:1027005" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1027109:1027115" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1027115:1027121" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1027225:1027231" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1027231:1027237" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1029406:1029412" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1029412:1029418" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1030385:1030391" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1030391:1030397" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1030537:1030543" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1030543:1030549" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1030691:1030697" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1030697:1030703" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1030847:1030853" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1030853:1030859" ph="&amp;nbsp;" />
-            <marker date="1510902945729" expanded="true" signature="1031669:1031680" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="1035617:1035630" ph="..." />
-            <marker date="1510902945729" expanded="true" signature="1036007:1036043" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/util/PageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="46" column="67" lean-forward="true" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -2300,11 +2444,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jquery-easyui-1.5.3/themes/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="68" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="7" column="20031" lean-forward="false" selection-start-line="7" selection-start-column="20031" selection-end-line="7" selection-end-column="20031" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/jquery-easyui-1.5.3/themes/icon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3000">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/controller.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BloggerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/mainTemp.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="672">
+          <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/dialogs/preview/preview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="89" column="22" lean-forward="false" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/util/PageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/foreground/blog/blogDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/jsp/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/themes/iframe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/ueditor.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="28343" column="80" lean-forward="false" selection-start-line="28343" selection-start-column="80" selection-end-line="28343" selection-end-column="80" />
+          <folding>
+            <marker date="1510907899978" expanded="true" signature="354708:354721" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="359251:359268" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="364589:364607" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="458484:458510" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="604823:604953" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="825665:825760" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="862511:862587" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="874746:874764" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="874811:874853" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="874938:874968" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="893354:893426" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="903317:903343" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="903539:903630" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="903887:903962" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="904149:904164" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="904384:904436" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="916358:916447" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="980656:980728" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="999738:999750" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="1001982:1002006" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="1027075:1027081" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1027081:1027087" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1027191:1027197" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1027197:1027203" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1027307:1027313" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1027313:1027319" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1029488:1029494" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1029494:1029500" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1030467:1030473" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1030473:1030479" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1030619:1030625" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1030625:1030631" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1030773:1030779" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1030779:1030785" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1030929:1030935" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1030935:1030941" ph="&amp;nbsp;" />
+            <marker date="1510907899978" expanded="true" signature="1031751:1031762" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="1035699:1035712" ph="..." />
+            <marker date="1510907899978" expanded="true" signature="1036089:1036125" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

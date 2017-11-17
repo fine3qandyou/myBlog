@@ -4302,7 +4302,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
      * @param  {Range}   range    range对象
      */
     function updateCollapse(range) {
-        range.collapsed =
+        range.collapse =
             range.startContainer && range.endContainer &&
                 range.startContainer === range.endContainer &&
                 range.startOffset == range.endOffset;
@@ -6921,6 +6921,8 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
                     //设置默认字体和字号
                     //font-family不能呢随便改，在safari下fillchar会有解析问题
                     'body{margin:8px;font-family:sans-serif;font-size:16px;}' +
+                    //设置图片最大宽度，以免撑出滚动条
+                    'img{max-width:100%;}'+
                     //设置段落间距
                     'p{margin:5px 0;}</style>' +
                     ( options.iframeCssUrl ? '<link rel=\'stylesheet\' type=\'text/css\' href=\'' + utils.unhtml(options.iframeCssUrl) + '\'/>' : '' ) +
