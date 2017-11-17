@@ -18,11 +18,12 @@ public class RandomUtil {
         if (blogList.size() < 5) {
             blogRandomList = blogList;
         }else {
-            for (int i = 0; i < 5; i++){
+            for (int i = 1; i < 5; i++){
                 int a = random.nextInt(randomList.size()-1);
                 blogRandomList.add(blogList.get(randomList.get(a)));
                 randomList.remove(a);
             }
+            blogRandomList.add(blogList.get(0));
         }
         return blogRandomList;
     }

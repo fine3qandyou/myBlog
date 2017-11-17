@@ -55,7 +55,7 @@ public class PageUtil {
         if(next == null || next.getId() == null) {
             pageCode.append("<p>下一篇：无</P>");
         } else {
-            pageCode.append("<p>上一篇：<a href='" + projectContent + "/blog/articles/" + next.getId() + ".html'>" + next.getTitle() + "</a></p>");
+            pageCode.append("<p>下一篇：<a href='" + projectContent + "/blog/articles/" + next.getId() + ".html'>" + next.getTitle() + "</a></p>");
         }
 
         return pageCode.toString();
