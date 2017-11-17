@@ -253,6 +253,25 @@
       <artifactId>junit</artifactId>
       <version>4.12</version>
     </dependency>
+    <!--UEditor-->
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.baidu.ueditor</groupId>
+      <artifactId>ueditor</artifactId>
+      <version>1.1.2</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/src/main/webapp/static/ueditor1.4.3.3/jsp/lib/ueditor-1.1.2.jar</systemPath>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.json/json -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20171018</version>
+    </dependency>
 
   </dependencies>
   <build>

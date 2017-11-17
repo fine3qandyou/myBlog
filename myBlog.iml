@@ -90,5 +90,15 @@
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.7" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: com.baidu.ueditor:ueditor:1.1.2">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/webapp/static/ueditor1.4.3.3/jsp/lib/ueditor-1.1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: org.json:json:20171018" level="project" />
   </component>
 </module>
