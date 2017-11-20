@@ -24,5 +24,5 @@
 			</c:choose>
 		</ul>
 	</div>
-	${pageCode }
+	${pageCode}
 </div>
