@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="035325fc-f593-4328-88af-b54e4b9024cc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/blog/searchResult.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/blog/searchResult.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -140,6 +142,44 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BlogController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="79" column="41" lean-forward="true" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="101" column="68" lean-forward="true" selection-start-line="101" selection-start-column="68" selection-end-line="101" selection-end-column="68" />
+              <folding>
+                <marker date="1511255548206" expanded="true" signature="2077:2134" ph="SELECT count... t_blog" />
+                <marker date="1511255548206" expanded="true" signature="2247:2351" ph="INSERT INTO blog.t_blog... " />
+                <marker date="1511255548206" expanded="true" signature="2425:3209" ph="UPDATE blog.... " />
+                <marker date="1511255548206" expanded="true" signature="3286:3324" ph="DELETE FROM " />
+                <marker date="1511255548206" expanded="true" signature="3421:3456" ph="SELECT * fro... t_blog" />
+                <marker date="1511255548206" expanded="true" signature="3557:3625" ph="SELECT * FRO... t_blog" />
+                <marker date="1511255548206" expanded="true" signature="3726:3786" ph="SELECT * FRO... t_blog" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="38" column="74" lean-forward="true" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -159,7 +199,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>blog.id</find>
       <find>sess</find>
       <find>Session</find>
       <find>session</find>
@@ -189,6 +228,7 @@
       <find>config</find>
       <find>render:func</find>
       <find>'body{margin</find>
+      <find>getPrevAndNextPageCode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -233,7 +273,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/admin/BlogManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/BlogTypeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/BlogTypeManage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java" />
@@ -256,6 +295,7 @@
         <option value="$PROJECT_DIR$/target/myBlog/static/ueditor1.4.3.3/config.json" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/themes/iframe.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/foreground/blog/searchResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" />
       </list>
     </option>
   </component>
@@ -1370,11 +1410,6 @@
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
-        <artifact name="myBlog:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="" />
-          </settings>
-        </artifact>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_myBlog_2" />
@@ -1437,7 +1472,6 @@
       <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="myBlog:war exploded" />
-          <artifact name="myBlog:war" />
         </option>
       </method>
     </configuration>
@@ -1481,14 +1515,7 @@
       <workItem from="1509447712318" duration="147905000" />
       <workItem from="1510195479705" duration="50650000" />
       <workItem from="1510800563330" duration="3914000" />
-      <workItem from="1510813032813" duration="31877000" />
-    </task>
-    <task id="LOCAL-00015" summary="添加了评论审核前台，修改了评论管理部分，进行了功能测试">
-      <created>1508743568413</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1508743568413</updated>
+      <workItem from="1510813032813" duration="33294000" />
     </task>
     <task id="LOCAL-00016" summary="添加了评论审核前台，修改了评论管理部分，进行了功能测试">
       <created>1508743850164</created>
@@ -1826,7 +1853,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511172937546</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="修复了mysql编码问题">
+      <created>1511250961157</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1511250961157</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1862,7 +1896,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="546848000" />
+    <option name="totallyTimeSpent" value="548265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1945,7 +1979,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成评论上传部分" />
     <MESSAGE value="评论功能前台部分完成，准备设置权限和ip地址部分" />
     <MESSAGE value="前台评论全部完成，准备完善后台功能，删除审核部分" />
     <MESSAGE value="评论管理功能完成，决定去掉审核部分，下一步完成搜索功能" />
@@ -1970,7 +2003,8 @@
     <MESSAGE value="部署到了服务器上，还差域名备案了" />
     <MESSAGE value="去掉了搜索结果的图片显示" />
     <MESSAGE value="调整了一点格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整了一点格式" />
+    <MESSAGE value="修复了mysql编码问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了mysql编码问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1983,14 +2017,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/util/ResponseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/admin/test.java" />
     <entry file="dbDummy://dbtable:/3fa2e6c3/a30cf28b-9cbc-4af2-9190-5338d0bea103/blog.t_comment">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -2173,17 +2199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1414#1430#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ueditor1.4.3.3/testUeditor.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -2204,14 +2219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -2287,14 +2294,6 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/util/PageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2443,6 +2442,46 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/BlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="79" column="41" lean-forward="true" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/util/PageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="101" column="68" lean-forward="true" selection-start-line="101" selection-start-column="68" selection-end-line="101" selection-end-column="68" />
+          <folding>
+            <marker date="1511255548206" expanded="true" signature="2077:2134" ph="SELECT count... t_blog" />
+            <marker date="1511255548206" expanded="true" signature="2247:2351" ph="INSERT INTO blog.t_blog... " />
+            <marker date="1511255548206" expanded="true" signature="2425:3209" ph="UPDATE blog.... " />
+            <marker date="1511255548206" expanded="true" signature="3286:3324" ph="DELETE FROM " />
+            <marker date="1511255548206" expanded="true" signature="3421:3456" ph="SELECT * fro... t_blog" />
+            <marker date="1511255548206" expanded="true" signature="3557:3625" ph="SELECT * FRO... t_blog" />
+            <marker date="1511255548206" expanded="true" signature="3726:3786" ph="SELECT * FRO... t_blog" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myblog/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="38" column="74" lean-forward="true" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
           <folding />
         </state>
       </provider>
