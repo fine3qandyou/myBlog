@@ -8,9 +8,11 @@ import com.myblog.lucence.BlogIndex;
 import com.myblog.service.BlogService;
 import com.myblog.service.BlogTypeService;
 import com.myblog.service.CommentService;
+import com.myblog.util.DateUtil;
 import com.myblog.util.PageUtil;
 import com.myblog.util.ResponseUtil;
 import com.myblog.util.StringUtil;
+import com.sun.javafx.binding.StringFormatter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 @Controller
@@ -100,7 +103,19 @@ public class BlogController {
             int toIndex = blogIndexList.size() >= Integer.parseInt(page) * pageSize ? Integer
                     .parseInt(page) * pageSize
                     : blogIndexList.size();
-            modelAndView.addObject("blogIndexList", blogIndexList.subList(fromIndex, toIndex));
+
+            List<Blog> tempList =  blogIndexList.subList(fromIndex, toIndex);
+            List<Blog> returnList = new ArrayList<>();
+            for(int i = 0 ; i< tempList.size() ;i++){
+                Blog returnBlog = tempList.get(i);
+                Blog blog = blogService.getById(returnBlog.getId());
+                returnBlog.setReleaseDate(blog.getReleaseDate());
+                returnBlog.setSummary(blog.getSummary());
+                returnBlog.setKeyWord(blog.getKeyWord());
+                returnList.add(returnBlog);
+            }
+
+            modelAndView.addObject("blogIndexList",returnList );
             modelAndView.addObject("pageCode", PageUtil.getUpAndDownPageCode(
                     Integer.parseInt(page), blogIndexList.size(), data, pageSize,
                     request.getServletContext().getContextPath()));

@@ -99,7 +99,7 @@
     </select>
 
     <select id="getNextBlog" resultMap="BlogResult" parameterType="Integer">
-        SELECT * FROM blog.t_blog WHERE id>#{id} ORDER BY id DESC limit 1
+        SELECT * FROM blog.t_blog WHERE id>#{id} ORDER BY id limit 1
     </select>
 
 
