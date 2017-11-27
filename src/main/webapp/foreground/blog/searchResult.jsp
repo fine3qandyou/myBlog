@@ -17,7 +17,7 @@
 					<c:forEach items="${blogIndexList}" var="blog">
 						 <li style="margin-bottom: 20px">
 						  	 <span class="title"><a href="${pageContext.request.contextPath}/blog/articles/${blog.id}.html" target="_blank">${blog.title}</a></span>
-						  	 <span class="summary">摘要: ${blog.summary}...</span>
+						  	 <span class="summary">摘要: ${blog.content}...</span>
 							 <span class="info">
 								 <font color="#999"><fmt:formatDate value="${blog.releaseDate }" type="date" pattern="yyyy-MM-dd HH:mm"/></font>
 								 <font color="#33a5ba">关键词：${blog.keyWord}</font>&nbsp;&nbsp;&nbsp;&nbsp;
