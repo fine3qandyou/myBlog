@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import com.myblog.entity.Blogger;
 import javax.annotation.Resource;
+import java.util.concurrent.locks.ReentrantLock;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring-beans.xml")
